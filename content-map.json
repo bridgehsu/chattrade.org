@@ -1,0 +1,1150 @@
+{
+  "sections": [
+    {
+      "key": "introduction",
+      "text": "项目介绍",
+      "caption": "先建立全景，再进入业务",
+      "items": [
+        {
+          "text": "项目概述",
+          "link": "/introduction/overview"
+        },
+        {
+          "text": "功能全景",
+          "link": "/introduction/landscape"
+        },
+        {
+          "text": "技术栈",
+          "link": "/introduction/technology"
+        },
+        {
+          "text": "文档阅读指南",
+          "link": "/introduction/reading-guide"
+        }
+      ]
+    },
+    {
+      "key": "quickstart",
+      "text": "快速开始",
+      "caption": "先辨认环境和依赖",
+      "items": [
+        {
+          "text": "环境准备",
+          "link": "/quickstart/environment"
+        },
+        {
+          "text": "工程结构",
+          "link": "/quickstart/structure"
+        },
+        {
+          "text": "服务启动与验证",
+          "link": "/quickstart/startup"
+        }
+      ]
+    },
+    {
+      "key": "architecture",
+      "text": "系统架构",
+      "caption": "理解职责边界与数据流",
+      "items": [
+        {
+          "text": "整体架构",
+          "link": "/architecture/overview"
+        },
+        {
+          "text": "服务通信与消息流转",
+          "link": "/architecture/communication"
+        },
+        {
+          "text": "数据存储与缓存",
+          "link": "/architecture/data"
+        },
+        {
+          "text": "多商户架构",
+          "link": "/architecture/tenancy"
+        }
+      ]
+    },
+    {
+      "key": "fundamentals",
+      "text": "交易所基础知识",
+      "caption": "建立共同的业务语言",
+      "items": [
+        {
+          "text": "币种、网络与账户",
+          "link": "/fundamentals/assets"
+        },
+        {
+          "text": "委托、撮合与成交",
+          "link": "/fundamentals/orders"
+        },
+        {
+          "text": "现货、合约与期权",
+          "link": "/fundamentals/products"
+        }
+      ]
+    },
+    {
+      "key": "users",
+      "text": "用户与账户",
+      "caption": "身份、认证与访问边界",
+      "items": [
+        {
+          "text": "用户与账户体系",
+          "link": "/users/overview"
+        },
+        {
+          "text": "注册、登录与认证流程",
+          "link": "/users/flows",
+          "items": [
+            {
+              "text": "注册与登录",
+              "link": "/users/flows#login"
+            },
+            {
+              "text": "身份认证",
+              "link": "/users/flows#verification"
+            },
+            {
+              "text": "安全验证",
+              "link": "/users/flows#security"
+            }
+          ]
+        },
+        {
+          "text": "权限与账户保护",
+          "link": "/users/permissions"
+        }
+      ]
+    },
+    {
+      "key": "ledger",
+      "text": "资产与账务",
+      "caption": "每一次资金变化都应有依据",
+      "items": [
+        {
+          "text": "资产体系与余额设计",
+          "link": "/ledger/model",
+          "items": [
+            {
+              "text": "账户分类",
+              "link": "/ledger/model#accounts"
+            },
+            {
+              "text": "可用与冻结",
+              "link": "/ledger/model#balances"
+            },
+            {
+              "text": "资金流水",
+              "link": "/ledger/model#journal"
+            }
+          ]
+        },
+        {
+          "text": "核心资金流程",
+          "link": "/ledger/flows",
+          "items": [
+            {
+              "text": "账户划转",
+              "link": "/ledger/flows#transfer"
+            },
+            {
+              "text": "资金冻结与释放",
+              "link": "/ledger/flows#freeze"
+            },
+            {
+              "text": "扣款与入账",
+              "link": "/ledger/flows#settlement"
+            }
+          ]
+        },
+        {
+          "text": "对账与资金一致性",
+          "link": "/ledger/reconciliation"
+        }
+      ]
+    },
+    {
+      "key": "spot",
+      "text": "现货手册",
+      "caption": "围绕订单、资金与成交建立完整认知",
+      "items": [
+        {
+          "text": "业务概述",
+          "link": "/spot/overview",
+          "items": [
+            {
+              "text": "现货交易基础",
+              "link": "/spot/overview#basics"
+            },
+            {
+              "text": "交易界面与核心术语",
+              "link": "/spot/overview#interface"
+            }
+          ]
+        },
+        {
+          "text": "系统架构",
+          "link": "/spot/architecture",
+          "items": [
+            {
+              "text": "模块划分与职责",
+              "link": "/spot/architecture#modules"
+            },
+            {
+              "text": "模块交互与数据流向",
+              "link": "/spot/architecture#dataflow"
+            }
+          ]
+        },
+        {
+          "text": "交易规则",
+          "link": "/spot/rules",
+          "items": [
+            {
+              "text": "币种与交易对",
+              "link": "/spot/rules#pairs"
+            },
+            {
+              "text": "订单类型",
+              "link": "/spot/rules#types"
+            },
+            {
+              "text": "精度、限额与手续费",
+              "link": "/spot/rules#limits"
+            }
+          ]
+        },
+        {
+          "text": "核心设计",
+          "link": "/spot/design",
+          "items": [
+            {
+              "text": "账户与资产",
+              "link": "/spot/design#account"
+            },
+            {
+              "text": "订单与状态流转",
+              "link": "/spot/design#states"
+            },
+            {
+              "text": "订单簿与撮合机制",
+              "link": "/spot/design#orderbook"
+            }
+          ]
+        },
+        {
+          "text": "核心交易流程",
+          "link": "/spot/flows",
+          "items": [
+            {
+              "text": "完整交易流程",
+              "link": "/spot/flows#complete"
+            },
+            {
+              "text": "下单与资金冻结",
+              "link": "/spot/flows#place"
+            },
+            {
+              "text": "撮合与成交",
+              "link": "/spot/flows#match"
+            },
+            {
+              "text": "成交结算",
+              "link": "/spot/flows#settle"
+            },
+            {
+              "text": "撤单与资金解冻",
+              "link": "/spot/flows#cancel"
+            }
+          ]
+        },
+        {
+          "text": "行情与推送",
+          "link": "/spot/market"
+        },
+        {
+          "text": "异常处理与一致性保障",
+          "link": "/spot/exceptions"
+        }
+      ]
+    },
+    {
+      "key": "contract",
+      "text": "合约手册",
+      "caption": "从订单进入持仓与风险体系",
+      "items": [
+        {
+          "text": "业务概述与系统架构",
+          "link": "/contract/overview",
+          "items": [
+            {
+              "text": "合约产品与术语",
+              "link": "/contract/overview#basics"
+            },
+            {
+              "text": "模块划分与交互",
+              "link": "/contract/overview#architecture"
+            }
+          ]
+        },
+        {
+          "text": "交易规则",
+          "link": "/contract/rules",
+          "items": [
+            {
+              "text": "开仓、平仓与持仓方向",
+              "link": "/contract/rules#direction"
+            },
+            {
+              "text": "杠杆与保证金",
+              "link": "/contract/rules#margin"
+            },
+            {
+              "text": "价格、限额与费用",
+              "link": "/contract/rules#fees"
+            }
+          ]
+        },
+        {
+          "text": "核心设计",
+          "link": "/contract/design",
+          "items": [
+            {
+              "text": "账户与持仓",
+              "link": "/contract/design#position"
+            },
+            {
+              "text": "订单与状态流转",
+              "link": "/contract/design#orders"
+            },
+            {
+              "text": "保证金与盈亏",
+              "link": "/contract/design#pnl"
+            },
+            {
+              "text": "风险与强平",
+              "link": "/contract/design#risk"
+            }
+          ]
+        },
+        {
+          "text": "核心交易流程",
+          "link": "/contract/flows",
+          "items": [
+            {
+              "text": "完整交易流程",
+              "link": "/contract/flows#complete"
+            },
+            {
+              "text": "开仓与成交",
+              "link": "/contract/flows#open"
+            },
+            {
+              "text": "持仓与保证金调整",
+              "link": "/contract/flows#adjust"
+            },
+            {
+              "text": "平仓与结算",
+              "link": "/contract/flows#close"
+            },
+            {
+              "text": "强平与清算",
+              "link": "/contract/flows#liquidation"
+            }
+          ]
+        },
+        {
+          "text": "行情与异常处理",
+          "link": "/contract/prices",
+          "items": [
+            {
+              "text": "合约行情与价格体系",
+              "link": "/contract/prices#prices"
+            },
+            {
+              "text": "异常处理与一致性保障",
+              "link": "/contract/prices#exceptions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "options",
+      "text": "期权手册",
+      "caption": "先确认产品，再解释周期和结算",
+      "items": [
+        {
+          "text": "业务概述与版本说明",
+          "link": "/options/overview",
+          "items": [
+            {
+              "text": "产品类型与版本说明",
+              "link": "/options/overview#versions"
+            },
+            {
+              "text": "系统架构",
+              "link": "/options/overview#architecture"
+            }
+          ]
+        },
+        {
+          "text": "产品与交易规则",
+          "link": "/options/rules",
+          "items": [
+            {
+              "text": "交易方向与期限",
+              "link": "/options/rules#direction"
+            },
+            {
+              "text": "下单条件与限额",
+              "link": "/options/rules#limits"
+            },
+            {
+              "text": "结果判定与收益规则",
+              "link": "/options/rules#result"
+            }
+          ]
+        },
+        {
+          "text": "核心设计",
+          "link": "/options/design",
+          "items": [
+            {
+              "text": "期权账户与资产",
+              "link": "/options/design#account"
+            },
+            {
+              "text": "订单与周期状态",
+              "link": "/options/design#states"
+            },
+            {
+              "text": "价格依据与结算机制",
+              "link": "/options/design#price"
+            }
+          ]
+        },
+        {
+          "text": "核心交易流程",
+          "link": "/options/flows",
+          "items": [
+            {
+              "text": "完整交易流程",
+              "link": "/options/flows#complete"
+            },
+            {
+              "text": "下单与资金处理",
+              "link": "/options/flows#place"
+            },
+            {
+              "text": "到期与结果判定",
+              "link": "/options/flows#expiry"
+            },
+            {
+              "text": "收益结算与入账",
+              "link": "/options/flows#settle"
+            }
+          ]
+        },
+        {
+          "text": "行情与异常处理",
+          "link": "/options/exceptions",
+          "items": [
+            {
+              "text": "行情与推送",
+              "link": "/options/exceptions#market"
+            },
+            {
+              "text": "异常处理与一致性保障",
+              "link": "/options/exceptions#exceptions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "wallet",
+      "text": "钱包手册",
+      "caption": "连接链上事实与内部资产",
+      "items": [
+        {
+          "text": "业务概述与钱包架构",
+          "link": "/wallet/overview"
+        },
+        {
+          "text": "核心设计",
+          "link": "/wallet/design",
+          "items": [
+            {
+              "text": "币种与网络",
+              "link": "/wallet/design#network"
+            },
+            {
+              "text": "地址管理",
+              "link": "/wallet/design#address"
+            },
+            {
+              "text": "链上交易与确认数",
+              "link": "/wallet/design#confirmations"
+            },
+            {
+              "text": "钱包与内部账务",
+              "link": "/wallet/design#ledger"
+            }
+          ]
+        },
+        {
+          "text": "核心充提流程",
+          "link": "/wallet/flows",
+          "items": [
+            {
+              "text": "充值监听与入账",
+              "link": "/wallet/flows#deposit"
+            },
+            {
+              "text": "提现申请与审核",
+              "link": "/wallet/flows#review"
+            },
+            {
+              "text": "提现发送与确认",
+              "link": "/wallet/flows#withdraw"
+            },
+            {
+              "text": "资金归集",
+              "link": "/wallet/flows#collection"
+            }
+          ]
+        },
+        {
+          "text": "核对、安全与异常处理",
+          "link": "/wallet/operations",
+          "items": [
+            {
+              "text": "充提核对与监控",
+              "link": "/wallet/operations#monitor"
+            },
+            {
+              "text": "安全与异常处理",
+              "link": "/wallet/operations#exceptions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "otc",
+      "text": "OTC 手册",
+      "caption": "理解商家、订单与资金托管",
+      "items": [
+        {
+          "text": "业务概述与系统架构",
+          "link": "/otc/overview"
+        },
+        {
+          "text": "商家、规则与核心设计",
+          "link": "/otc/design",
+          "items": [
+            {
+              "text": "商家与交易规则",
+              "link": "/otc/design#merchant"
+            },
+            {
+              "text": "广告与委托",
+              "link": "/otc/design#advert"
+            },
+            {
+              "text": "订单状态",
+              "link": "/otc/design#states"
+            },
+            {
+              "text": "资金冻结与释放",
+              "link": "/otc/design#funds"
+            }
+          ]
+        },
+        {
+          "text": "核心交易流程",
+          "link": "/otc/flows",
+          "items": [
+            {
+              "text": "广告发布",
+              "link": "/otc/flows#advert"
+            },
+            {
+              "text": "下单与付款确认",
+              "link": "/otc/flows#payment"
+            },
+            {
+              "text": "放币与成交",
+              "link": "/otc/flows#release"
+            },
+            {
+              "text": "取消与超时",
+              "link": "/otc/flows#cancel"
+            },
+            {
+              "text": "申诉处理",
+              "link": "/otc/flows#appeal"
+            }
+          ]
+        },
+        {
+          "text": "风控与异常处理",
+          "link": "/otc/risk"
+        }
+      ]
+    },
+    {
+      "key": "automation",
+      "text": "机器人与量化",
+      "caption": "区分行情接入、交易执行与策略",
+      "items": [
+        {
+          "text": "业务概述与外部接入",
+          "link": "/automation/overview",
+          "items": [
+            {
+              "text": "模块概述",
+              "link": "/automation/overview#modules"
+            },
+            {
+              "text": "外部平台接入",
+              "link": "/automation/overview#external"
+            },
+            {
+              "text": "机器人交易机制",
+              "link": "/automation/overview#robot"
+            }
+          ]
+        },
+        {
+          "text": "策略与跟单流程",
+          "link": "/automation/flows",
+          "items": [
+            {
+              "text": "策略与跟单设计",
+              "link": "/automation/flows#design"
+            },
+            {
+              "text": "核心流程",
+              "link": "/automation/flows#flows"
+            },
+            {
+              "text": "风险控制与异常处理",
+              "link": "/automation/flows#risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "operations",
+      "text": "运营与奖励",
+      "caption": "把活动规则变成可核算的业务",
+      "items": [
+        {
+          "text": "活动与内容管理",
+          "link": "/operations/activities"
+        },
+        {
+          "text": "邀请关系与奖励流程",
+          "link": "/operations/rewards"
+        }
+      ]
+    },
+    {
+      "key": "administration",
+      "text": "商户与后台管理",
+      "caption": "让配置和管理操作可解释",
+      "items": [
+        {
+          "text": "总后台、商户与权限",
+          "link": "/administration/structure",
+          "items": [
+            {
+              "text": "总后台与商户后台",
+              "link": "/administration/structure#backoffice"
+            },
+            {
+              "text": "商户与应用配置",
+              "link": "/administration/structure#partner"
+            },
+            {
+              "text": "角色、菜单与数据权限",
+              "link": "/administration/structure#permissions"
+            }
+          ]
+        },
+        {
+          "text": "产品管理与审核流程",
+          "link": "/administration/flows",
+          "items": [
+            {
+              "text": "币种与交易产品管理",
+              "link": "/administration/flows#products"
+            },
+            {
+              "text": "用户、订单与资金管理",
+              "link": "/administration/flows#management"
+            },
+            {
+              "text": "关键操作与审核流程",
+              "link": "/administration/flows#approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "reports",
+      "text": "报表与风控",
+      "caption": "统一统计口径，明确风险动作",
+      "items": [
+        {
+          "text": "统计指标与资产报表",
+          "link": "/reports/metrics",
+          "items": [
+            {
+              "text": "统计维度与指标口径",
+              "link": "/reports/metrics#definitions"
+            },
+            {
+              "text": "用户与交易报表",
+              "link": "/reports/metrics#trading"
+            },
+            {
+              "text": "资产报表与对账结果",
+              "link": "/reports/metrics#assets"
+            }
+          ]
+        },
+        {
+          "text": "风控规则与事件处理",
+          "link": "/reports/risk",
+          "items": [
+            {
+              "text": "风控规则与触发条件",
+              "link": "/reports/risk#rules"
+            },
+            {
+              "text": "风险事件处理流程",
+              "link": "/reports/risk#events"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "infrastructure",
+      "text": "公共基础服务",
+      "caption": "认识跨业务复用的能力",
+      "items": [
+        {
+          "text": "公共组件与配置",
+          "link": "/infrastructure/components"
+        },
+        {
+          "text": "消息、上传与国际化",
+          "link": "/infrastructure/services",
+          "items": [
+            {
+              "text": "消息、短信与邮件",
+              "link": "/infrastructure/services#messages"
+            },
+            {
+              "text": "文件上传",
+              "link": "/infrastructure/services#upload"
+            },
+            {
+              "text": "国际化",
+              "link": "/infrastructure/services#i18n"
+            },
+            {
+              "text": "定时任务",
+              "link": "/infrastructure/services#tasks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "api",
+      "text": "接口文档",
+      "caption": "记录协议语义，不虚构接口地址",
+      "items": [
+        {
+          "text": "接口约定与鉴权",
+          "link": "/api/conventions"
+        },
+        {
+          "text": "业务接口与错误处理",
+          "link": "/api/business",
+          "items": [
+            {
+              "text": "用户与资产接口",
+              "link": "/api/business#account"
+            },
+            {
+              "text": "交易业务接口",
+              "link": "/api/business#trading"
+            },
+            {
+              "text": "行情与 WebSocket",
+              "link": "/api/business#websocket"
+            },
+            {
+              "text": "错误码",
+              "link": "/api/business#errors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "deployment",
+      "text": "部署与运维",
+      "caption": "验证业务可用，而不只看进程存活",
+      "items": [
+        {
+          "text": "部署架构与服务配置",
+          "link": "/deployment/topology",
+          "items": [
+            {
+              "text": "环境依赖",
+              "link": "/deployment/topology#dependencies"
+            },
+            {
+              "text": "服务部署与启动顺序",
+              "link": "/deployment/topology#startup"
+            },
+            {
+              "text": "配置管理",
+              "link": "/deployment/topology#configuration"
+            }
+          ]
+        },
+        {
+          "text": "监控、备份与恢复",
+          "link": "/deployment/recovery",
+          "items": [
+            {
+              "text": "日志、监控与告警",
+              "link": "/deployment/recovery#monitor"
+            },
+            {
+              "text": "备份与恢复",
+              "link": "/deployment/recovery#backup"
+            }
+          ]
+        },
+        {
+          "text": "常见故障排查",
+          "link": "/deployment/troubleshooting"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "/introduction/overview",
+      "title": "项目概述",
+      "group": "项目介绍"
+    },
+    {
+      "path": "/introduction/landscape",
+      "title": "功能全景",
+      "group": "项目介绍"
+    },
+    {
+      "path": "/introduction/technology",
+      "title": "技术栈",
+      "group": "项目介绍"
+    },
+    {
+      "path": "/introduction/reading-guide",
+      "title": "文档阅读指南",
+      "group": "项目介绍"
+    },
+    {
+      "path": "/quickstart/environment",
+      "title": "环境准备",
+      "group": "快速开始"
+    },
+    {
+      "path": "/quickstart/structure",
+      "title": "工程结构",
+      "group": "快速开始"
+    },
+    {
+      "path": "/quickstart/startup",
+      "title": "服务启动与验证",
+      "group": "快速开始"
+    },
+    {
+      "path": "/architecture/overview",
+      "title": "整体架构",
+      "group": "系统架构"
+    },
+    {
+      "path": "/architecture/communication",
+      "title": "服务通信与消息流转",
+      "group": "系统架构"
+    },
+    {
+      "path": "/architecture/data",
+      "title": "数据存储与缓存",
+      "group": "系统架构"
+    },
+    {
+      "path": "/architecture/tenancy",
+      "title": "多商户架构",
+      "group": "系统架构"
+    },
+    {
+      "path": "/fundamentals/assets",
+      "title": "币种、网络与账户",
+      "group": "交易所基础知识"
+    },
+    {
+      "path": "/fundamentals/orders",
+      "title": "委托、撮合与成交",
+      "group": "交易所基础知识"
+    },
+    {
+      "path": "/fundamentals/products",
+      "title": "现货、合约与期权",
+      "group": "交易所基础知识"
+    },
+    {
+      "path": "/users/overview",
+      "title": "用户与账户体系",
+      "group": "用户与账户"
+    },
+    {
+      "path": "/users/flows",
+      "title": "注册、登录与认证流程",
+      "group": "用户与账户"
+    },
+    {
+      "path": "/users/permissions",
+      "title": "权限与账户保护",
+      "group": "用户与账户"
+    },
+    {
+      "path": "/ledger/model",
+      "title": "资产体系与余额设计",
+      "group": "资产与账务"
+    },
+    {
+      "path": "/ledger/flows",
+      "title": "核心资金流程",
+      "group": "资产与账务"
+    },
+    {
+      "path": "/ledger/reconciliation",
+      "title": "对账与资金一致性",
+      "group": "资产与账务"
+    },
+    {
+      "path": "/spot/overview",
+      "title": "业务概述",
+      "group": "现货手册"
+    },
+    {
+      "path": "/spot/architecture",
+      "title": "系统架构",
+      "group": "现货手册"
+    },
+    {
+      "path": "/spot/rules",
+      "title": "交易规则",
+      "group": "现货手册"
+    },
+    {
+      "path": "/spot/design",
+      "title": "核心设计",
+      "group": "现货手册"
+    },
+    {
+      "path": "/spot/flows",
+      "title": "核心交易流程",
+      "group": "现货手册"
+    },
+    {
+      "path": "/spot/market",
+      "title": "行情与推送",
+      "group": "现货手册"
+    },
+    {
+      "path": "/spot/exceptions",
+      "title": "异常处理与一致性保障",
+      "group": "现货手册"
+    },
+    {
+      "path": "/contract/overview",
+      "title": "业务概述与系统架构",
+      "group": "合约手册"
+    },
+    {
+      "path": "/contract/rules",
+      "title": "交易规则",
+      "group": "合约手册"
+    },
+    {
+      "path": "/contract/design",
+      "title": "核心设计",
+      "group": "合约手册"
+    },
+    {
+      "path": "/contract/flows",
+      "title": "核心交易流程",
+      "group": "合约手册"
+    },
+    {
+      "path": "/contract/prices",
+      "title": "行情与异常处理",
+      "group": "合约手册"
+    },
+    {
+      "path": "/options/overview",
+      "title": "业务概述与版本说明",
+      "group": "期权手册"
+    },
+    {
+      "path": "/options/rules",
+      "title": "产品与交易规则",
+      "group": "期权手册"
+    },
+    {
+      "path": "/options/design",
+      "title": "核心设计",
+      "group": "期权手册"
+    },
+    {
+      "path": "/options/flows",
+      "title": "核心交易流程",
+      "group": "期权手册"
+    },
+    {
+      "path": "/options/exceptions",
+      "title": "行情与异常处理",
+      "group": "期权手册"
+    },
+    {
+      "path": "/wallet/overview",
+      "title": "业务概述与钱包架构",
+      "group": "钱包手册"
+    },
+    {
+      "path": "/wallet/design",
+      "title": "核心设计",
+      "group": "钱包手册"
+    },
+    {
+      "path": "/wallet/flows",
+      "title": "核心充提流程",
+      "group": "钱包手册"
+    },
+    {
+      "path": "/wallet/operations",
+      "title": "核对、安全与异常处理",
+      "group": "钱包手册"
+    },
+    {
+      "path": "/otc/overview",
+      "title": "业务概述与系统架构",
+      "group": "OTC 手册"
+    },
+    {
+      "path": "/otc/design",
+      "title": "商家、规则与核心设计",
+      "group": "OTC 手册"
+    },
+    {
+      "path": "/otc/flows",
+      "title": "核心交易流程",
+      "group": "OTC 手册"
+    },
+    {
+      "path": "/otc/risk",
+      "title": "风控与异常处理",
+      "group": "OTC 手册"
+    },
+    {
+      "path": "/automation/overview",
+      "title": "业务概述与外部接入",
+      "group": "机器人与量化"
+    },
+    {
+      "path": "/automation/flows",
+      "title": "策略与跟单流程",
+      "group": "机器人与量化"
+    },
+    {
+      "path": "/operations/activities",
+      "title": "活动与内容管理",
+      "group": "运营与奖励"
+    },
+    {
+      "path": "/operations/rewards",
+      "title": "邀请关系与奖励流程",
+      "group": "运营与奖励"
+    },
+    {
+      "path": "/administration/structure",
+      "title": "总后台、商户与权限",
+      "group": "商户与后台管理"
+    },
+    {
+      "path": "/administration/flows",
+      "title": "产品管理与审核流程",
+      "group": "商户与后台管理"
+    },
+    {
+      "path": "/reports/metrics",
+      "title": "统计指标与资产报表",
+      "group": "报表与风控"
+    },
+    {
+      "path": "/reports/risk",
+      "title": "风控规则与事件处理",
+      "group": "报表与风控"
+    },
+    {
+      "path": "/infrastructure/components",
+      "title": "公共组件与配置",
+      "group": "公共基础服务"
+    },
+    {
+      "path": "/infrastructure/services",
+      "title": "消息、上传与国际化",
+      "group": "公共基础服务"
+    },
+    {
+      "path": "/api/conventions",
+      "title": "接口约定与鉴权",
+      "group": "接口文档"
+    },
+    {
+      "path": "/api/business",
+      "title": "业务接口与错误处理",
+      "group": "接口文档"
+    },
+    {
+      "path": "/deployment/topology",
+      "title": "部署架构与服务配置",
+      "group": "部署与运维"
+    },
+    {
+      "path": "/deployment/recovery",
+      "title": "监控、备份与恢复",
+      "group": "部署与运维"
+    },
+    {
+      "path": "/deployment/troubleshooting",
+      "title": "常见故障排查",
+      "group": "部署与运维"
+    }
+  ]
+}
