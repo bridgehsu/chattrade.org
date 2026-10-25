@@ -3,7 +3,7 @@ import sidebar from './navigation.json'
 export default defineConfig({
   lang: 'zh-CN', title: 'TGEX', titleTemplate: ':title · TGEX',
   description: '交易所设计与业务流程知识库。理解现货、合约、期权、钱包与 OTC 的架构、资金和核心流程。',
-  srcDir: '.', outDir: '../../dist', cleanUrls: true,
+  srcDir: '.', outDir: '../dist', cleanUrls: true,
   sitemap: { hostname: 'https://tgex.net' },
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
