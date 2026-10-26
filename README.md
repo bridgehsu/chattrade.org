@@ -19,6 +19,16 @@ npm run preview
 
 构建产物在 `dist/`。源文件在 `docs/`，导航在 `docs/.vitepress/navigation.json`。`content-map.json` 是内容索引，新增页面时需同步更新。首页组件和主题位于 `docs/.vitepress/theme/`。
 
+## GitHub 自动构建
+
+工作流位于 `.github/workflows/build.yml`。推送到 `main`、向 `main` 提交 Pull Request 时自动运行，也可以在 GitHub Actions 页面手动触发。
+
+构建顺序：Node.js 22 → `npm ci` → `npm run check` → `npm run build`。成功后上传 `dist/`，产物名为 `tgex-dist-提交SHA`，保留 14 天，可在对应运行页面的 Artifacts 中下载。
+
+查看运行记录：https://github.com/bridgehsu/tgex.net/actions/workflows/build.yml
+
+本工作流负责检查与构建。自动部署到服务器或绑定 `tgex.net` 需要另行配置目标托管服务。
+
 ## 内容边界
 
 60 篇文档覆盖 18 个栏目。模块映射、现货订单类型和状态、订单簿结构及部分期权状态已对照工程检查；业务图为流程抽象，一致性、安全和恢复设计不代表生产功能已完成审计。示例价格、收益与费率仅用于演算。
