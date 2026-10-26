@@ -13,11 +13,16 @@ export default defineConfig({
   themeConfig: {
     logo: { src: '/logo.svg', alt: 'TGEX' }, siteTitle: 'TGEX',
     nav: [
-      { text: '文档指南', link: '/introduction/overview', activeMatch: '/introduction/|/quickstart/|/architecture/|/fundamentals/' },
-      { text: '交易业务', items: [
-        { text: '现货手册', link: '/spot/overview' }, { text: '合约手册', link: '/contract/overview' },
-        { text: '期权手册', link: '/options/overview' }, { text: '钱包手册', link: '/wallet/overview' },
-        { text: 'OTC 手册', link: '/otc/overview' }
+      { text: '文档指南', 
+        link: '/introduction/overview', activeMatch: '/introduction/|/quickstart/|/architecture/|/fundamentals/' 
+      },
+      { text: '交易业务', 
+        items: [
+        { text: '现货手册', link: '/spot/overview' }, 
+        { text: '合约手册', link: '/contract/overview' },
+        { text: '期权手册', link: '/options/overview' }, 
+        { text: '钱包手册', link: '/wallet/overview' },
+        { text: 'OTC手册', link: '/otc/overview' }
       ] },
       { text: '部署与运维', link: '/deployment/topology' }
     ],
