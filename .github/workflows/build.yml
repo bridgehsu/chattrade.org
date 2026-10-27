@@ -8,7 +8,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: docs-build-${{ github.workflow }}-${{ github.ref }}
@@ -23,7 +25,7 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v7
         with:
-          persist-credentials: false
+          persist-credentials: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v7
@@ -40,6 +42,19 @@ jobs:
 
       - name: Build documentation
         run: npm run build
+
+      - name: Commit static pages for branch publishing
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Publish VitePress HTML for GitHub Pages'
+          file_pattern: docs/.nojekyll docs/index.html docs/404.html docs/vp-icons.css docs/hashmap.json docs/assets docs/**/index.html
+          skip_dirty_check: false
+
+      - name: Prepare GitHub Pages files
+        run: |
+          touch dist/.nojekyll
+          printf 'tgex.net\n' > dist/CNAME
 
       - name: Upload static website
         uses: actions/upload-artifact@v7
@@ -61,16 +76,53 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    permissions:
-      pages: write
-      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Publish with GitHub Actions instead of Jekyll
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          payload='{"build_type":"workflow","cname":"tgex.net"}'
+          if gh api "repos/${GITHUB_REPOSITORY}/pages" >/dev/null 2>&1; then
+            gh api --method PUT "repos/${GITHUB_REPOSITORY}/pages" \
+              -H "Accept: application/vnd.github+json" \
+              --input - <<<"$payload"
+          else
+            gh api --method POST "repos/${GITHUB_REPOSITORY}/pages" \
+              -H "Accept: application/vnd.github+json" \
+              --input - <<<"$payload"
+          fi
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Deploy static website
         id: deployment
         uses: actions/deploy-pages@v4
+
+  publish-branch:
+    name: Publish gh-pages branch
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v7
+
+      - name: Download built website
+        uses: actions/download-artifact@v7
+        with:
+          name: tgex-dist-${{ github.sha }}
+          path: dist
+
+      - name: Publish dist to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          branch: gh-pages
+          clean: true
+          single-commit: true

@@ -29,7 +29,9 @@ npm run preview
 
 推送到 `main` 或在 `main` 手动运行时，还会上传 Pages 专用产物并部署至 GitHub Pages；Pull Request 只检查与构建。
 
-首次配置需进入仓库 **Settings → Pages → Build and deployment → Source**，选择 **GitHub Actions**。在 **Custom domain** 中保留 `tgex.net`，域名校验和证书就绪后启用 **Enforce HTTPS**。不要选择从 `main /docs` 或仓库根目录进行分支发布，否则 Jekyll 会把 Markdown 中的 Vue 组件当作普通 HTML，导致首页只显示标题。
+首次配置需进入仓库 **Settings → Pages → Build and deployment → Source**，选择 **GitHub Actions**。若 Actions 发布不可用，改为 **Deploy from a branch**，分支选 `gh-pages`、目录选 `/ (root)`。在 **Custom domain** 中保留 `tgex.net`，域名校验和证书就绪后启用 **Enforce HTTPS**。
+
+不要选择从 `main /docs` 或仓库根目录进行分支发布。那样会走 GitHub Pages 自带的 Jekyll，把 Markdown 当正文渲染，Vue 组件不会编译，首页只剩标题，文档页也没有 VitePress 侧栏和样式。
 
 自定义 Actions 部署以 Pages 设置中的域名为准，仓库 `CNAME` 文件不能代替该设置。当前站点使用根路径 `/`，适用于 `https://tgex.net/`；如果改用 `/tgex.net/` 仓库子路径，需同时适配 VitePress base 和自定义组件链接。
 

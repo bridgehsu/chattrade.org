@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs --host 127.0.0.1",
-    "build": "vitepress build docs",
+    "build": "vitepress build docs && node scripts/sync-github-pages.mjs",
     "preview": "vitepress preview docs --host 127.0.0.1",
     "check": "node scripts/check-content.mjs"
   },
