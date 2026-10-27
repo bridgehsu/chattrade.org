@@ -19,7 +19,7 @@ npm run preview
 
 构建产物在 `dist/`。源文件在 `docs/`，导航在 `docs/.vitepress/navigation.json`。`content-map.json` 是内容索引，新增页面时需同步更新。首页组件和主题位于 `docs/.vitepress/theme/`。
 
-## GitHub 自动构建
+## GitHub 自动构建与 Pages 部署
 
 工作流位于 `.github/workflows/build.yml`。推送到 `main`、向 `main` 提交 Pull Request 时自动运行，也可以在 GitHub Actions 页面手动触发。
 
@@ -27,7 +27,11 @@ npm run preview
 
 查看运行记录：https://github.com/bridgehsu/tgex.net/actions/workflows/build.yml
 
-本工作流负责检查与构建。自动部署到服务器或绑定 `tgex.net` 需要另行配置目标托管服务。
+推送到 `main` 或在 `main` 手动运行时，还会上传 Pages 专用产物并部署至 GitHub Pages；Pull Request 只检查与构建。
+
+首次配置需进入仓库 **Settings → Pages → Build and deployment → Source**，选择 **GitHub Actions**。在 **Custom domain** 中保留 `tgex.net`，域名校验和证书就绪后启用 **Enforce HTTPS**。不要选择从 `main /docs` 或仓库根目录进行分支发布，否则 Jekyll 会把 Markdown 中的 Vue 组件当作普通 HTML，导致首页只显示标题。
+
+自定义 Actions 部署以 Pages 设置中的域名为准，仓库 `CNAME` 文件不能代替该设置。当前站点使用根路径 `/`，适用于 `https://tgex.net/`；如果改用 `/tgex.net/` 仓库子路径，需同时适配 VitePress base 和自定义组件链接。
 
 ## 内容边界
 
