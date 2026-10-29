@@ -13,12 +13,16 @@
               "link": "/pages/0101#文档面向谁"
             },
             {
-              "text": "内容如何区分",
-              "link": "/pages/0101#内容如何区分"
+              "text": "工作区工程",
+              "link": "/pages/0101#工作区工程"
             },
             {
-              "text": "版本边界",
-              "link": "/pages/0101#版本边界"
+              "text": "内容边界",
+              "link": "/pages/0101#内容边界"
+            },
+            {
+              "text": "版本说明",
+              "link": "/pages/0101#版本说明"
             }
           ]
         },
@@ -27,12 +31,16 @@
           "link": "/pages/0102",
           "items": [
             {
-              "text": "核心业务",
-              "link": "/pages/0102#核心业务"
+              "text": "核心能力",
+              "link": "/pages/0102#核心能力"
             },
             {
-              "text": "支撑业务",
-              "link": "/pages/0102#支撑业务"
+              "text": "客户端分工",
+              "link": "/pages/0102#客户端分工"
+            },
+            {
+              "text": "支撑能力",
+              "link": "/pages/0102#支撑能力"
             }
           ]
         },
@@ -41,16 +49,16 @@
           "link": "/pages/0103",
           "items": [
             {
-              "text": "已观察到的技术组成",
-              "link": "/pages/0103#已观察到的技术组成"
+              "text": "工作区技术组成",
+              "link": "/pages/0103#工作区技术组成"
             },
             {
-              "text": "各层职责",
-              "link": "/pages/0103#各层职责"
+              "text": "接入与运行时",
+              "link": "/pages/0103#接入与运行时"
             },
             {
-              "text": "选型与边界",
-              "link": "/pages/0103#选型与边界"
+              "text": "选型边界",
+              "link": "/pages/0103#选型边界"
             }
           ]
         },
@@ -67,8 +75,8 @@
               "link": "/pages/0104#每篇文档怎样读"
             },
             {
-              "text": "贯穿示例",
-              "link": "/pages/0104#贯穿示例"
+              "text": "贯穿原则",
+              "link": "/pages/0104#贯穿原则"
             }
           ]
         }
@@ -83,8 +91,8 @@
           "link": "/pages/0201",
           "items": [
             {
-              "text": "环境组成",
-              "link": "/pages/0201#环境组成"
+              "text": "运行时要求",
+              "link": "/pages/0201#运行时要求"
             },
             {
               "text": "准备顺序",
@@ -101,30 +109,42 @@
           "link": "/pages/0202",
           "items": [
             {
-              "text": "服务不是一个单体应用",
-              "link": "/pages/0202#服务不是一个单体应用"
+              "text": "工作区布局",
+              "link": "/pages/0202#工作区布局"
             },
             {
-              "text": "找到一条业务链",
-              "link": "/pages/0202#找到一条业务链"
+              "text": "桌面端关键目录",
+              "link": "/pages/0202#桌面端关键目录"
+            },
+            {
+              "text": "手机端关键目录",
+              "link": "/pages/0202#手机端关键目录"
             }
           ]
         },
         {
-          "text": "服务启动与验证",
+          "text": "本地启动",
           "link": "/pages/0203",
           "items": [
             {
-              "text": "建议启动层次",
-              "link": "/pages/0203#建议启动层次"
+              "text": "启动前",
+              "link": "/pages/0203#启动前"
+            },
+            {
+              "text": "chattrade.org",
+              "link": "/pages/0203#chattrade.org"
+            },
+            {
+              "text": "chattrade-web",
+              "link": "/pages/0203#chattrade-web"
+            },
+            {
+              "text": "chattrade-mobile",
+              "link": "/pages/0203#chattrade-mobile"
             },
             {
               "text": "启动后验证",
               "link": "/pages/0203#启动后验证"
-            },
-            {
-              "text": "系统访问",
-              "link": "/pages/0203#系统访问"
             }
           ]
         }
@@ -139,12 +159,12 @@
           "link": "/pages/0301",
           "items": [
             {
-              "text": "四类职责",
-              "link": "/pages/0301#四类职责"
+              "text": "分层示意",
+              "link": "/pages/0301#分层示意"
             },
             {
-              "text": "架构原则",
-              "link": "/pages/0301#架构原则"
+              "text": "四类职责",
+              "link": "/pages/0301#四类职责"
             },
             {
               "text": "工程映射",
@@ -153,56 +173,42 @@
           ]
         },
         {
-          "text": "服务通信与消息流转",
+          "text": "客户端与API接入",
           "link": "/pages/0302",
           "items": [
             {
-              "text": "通信方式",
-              "link": "/pages/0302#通信方式"
+              "text": "统一前缀",
+              "link": "/pages/0302#统一前缀"
             },
             {
-              "text": "超时的含义",
-              "link": "/pages/0302#超时的含义"
+              "text": "身份传递",
+              "link": "/pages/0302#身份传递"
             },
             {
-              "text": "设计目标",
-              "link": "/pages/0302#设计目标"
+              "text": "超时语义",
+              "link": "/pages/0302#超时语义"
+            },
+            {
+              "text": "WebSocket",
+              "link": "/pages/0302#WebSocket"
             }
           ]
         },
         {
-          "text": "数据存储与缓存",
+          "text": "数据与会话",
           "link": "/pages/0303",
           "items": [
             {
-              "text": "数据分工",
-              "link": "/pages/0303#数据分工"
+              "text": "三类数据",
+              "link": "/pages/0303#三类数据"
             },
             {
-              "text": "数据关系",
-              "link": "/pages/0303#数据关系"
+              "text": "会话生命周期",
+              "link": "/pages/0303#会话生命周期"
             },
             {
-              "text": "恢复设计",
-              "link": "/pages/0303#恢复设计"
-            }
-          ]
-        },
-        {
-          "text": "多商户架构",
-          "link": "/pages/0304",
-          "items": [
-            {
-              "text": "已观察到的结构",
-              "link": "/pages/0304#已观察到的结构"
-            },
-            {
-              "text": "隔离维度",
-              "link": "/pages/0304#隔离维度"
-            },
-            {
-              "text": "配置生效流程",
-              "link": "/pages/0304#配置生效流程"
+              "text": "缓存与刷新",
+              "link": "/pages/0303#缓存与刷新"
             }
           ]
         }
@@ -210,51 +216,59 @@
     },
     {
       "key": "section-04",
-      "text": "基础知识",
+      "text": "桌面端 Web",
       "items": [
         {
-          "text": "币种、网络与账户",
+          "text": "产品界面与路由",
           "link": "/pages/0401",
           "items": [
             {
-              "text": "币种和网络",
-              "link": "/pages/0401#币种和网络"
+              "text": "默认入口",
+              "link": "/pages/0401#默认入口"
             },
             {
-              "text": "交易对",
-              "link": "/pages/0401#交易对"
+              "text": "主要路由",
+              "link": "/pages/0401#主要路由"
             },
             {
-              "text": "账户",
-              "link": "/pages/0401#账户"
+              "text": "权限",
+              "link": "/pages/0401#权限"
             }
           ]
         },
         {
-          "text": "委托、撮合与成交",
+          "text": "核心工作流",
           "link": "/pages/0402",
           "items": [
             {
-              "text": "三个对象",
-              "link": "/pages/0402#三个对象"
+              "text": "研究到执行",
+              "link": "/pages/0402#研究到执行"
             },
             {
-              "text": "状态与数量",
-              "link": "/pages/0402#状态与数量"
+              "text": "API 线索",
+              "link": "/pages/0402#API 线索"
             },
             {
-              "text": "盘口、行情与 K 线",
-              "link": "/pages/0402#盘口、行情与 K 线"
+              "text": "与手机端关系",
+              "link": "/pages/0402#与手机端关系"
             }
           ]
         },
         {
-          "text": "现货、合约与期权",
+          "text": "本地开发与构建",
           "link": "/pages/0403",
           "items": [
             {
-              "text": "期权用语的边界",
-              "link": "/pages/0403#期权用语的边界"
+              "text": "开发",
+              "link": "/pages/0403#开发"
+            },
+            {
+              "text": "构建",
+              "link": "/pages/0403#构建"
+            },
+            {
+              "text": "校验建议",
+              "link": "/pages/0403#校验建议"
             }
           ]
         }
@@ -262,55 +276,59 @@
     },
     {
       "key": "section-05",
-      "text": "用户与账户",
+      "text": "手机端",
       "items": [
         {
-          "text": "用户与账户体系",
+          "text": "产品能力与路由",
           "link": "/pages/0501",
           "items": [
             {
-              "text": "业务对象",
-              "link": "/pages/0501#业务对象"
+              "text": "定位",
+              "link": "/pages/0501#定位"
             },
             {
-              "text": "用户关系",
-              "link": "/pages/0501#用户关系"
+              "text": "主要路由",
+              "link": "/pages/0501#主要路由"
+            },
+            {
+              "text": "与桌面端差异",
+              "link": "/pages/0501#与桌面端差异"
             }
           ]
         },
         {
-          "text": "注册、登录与认证流程",
+          "text": "H5与原生打包",
           "link": "/pages/0502",
           "items": [
             {
-              "text": "注册与登录",
-              "link": "/pages/0502#login"
+              "text": "发布形态",
+              "link": "/pages/0502#发布形态"
             },
             {
-              "text": "身份认证",
-              "link": "/pages/0502#verification"
+              "text": "后端连接",
+              "link": "/pages/0502#后端连接"
             },
             {
-              "text": "安全验证",
-              "link": "/pages/0502#security"
+              "text": "注意点",
+              "link": "/pages/0502#注意点"
             }
           ]
         },
         {
-          "text": "权限与账户保护",
+          "text": "本地开发与构建",
           "link": "/pages/0503",
           "items": [
             {
-              "text": "权限设计",
-              "link": "/pages/0503#权限设计"
+              "text": "开发",
+              "link": "/pages/0503#开发"
             },
             {
-              "text": "账户保护流程",
-              "link": "/pages/0503#账户保护流程"
+              "text": "构建",
+              "link": "/pages/0503#构建"
             },
             {
-              "text": "审计要求",
-              "link": "/pages/0503#审计要求"
+              "text": "验证",
+              "link": "/pages/0503#验证"
             }
           ]
         }
@@ -318,59 +336,41 @@
     },
     {
       "key": "section-06",
-      "text": "资产与账务",
+      "text": "AI 研究与分析",
       "items": [
         {
-          "text": "资产体系与余额设计",
+          "text": "业务概述",
           "link": "/pages/0601",
           "items": [
             {
-              "text": "账户分类",
-              "link": "/pages/0601#accounts"
+              "text": "目标",
+              "link": "/pages/0601#目标"
             },
             {
-              "text": "可用与冻结",
-              "link": "/pages/0601#balances"
+              "text": "参与者",
+              "link": "/pages/0601#参与者"
             },
             {
-              "text": "流水",
-              "link": "/pages/0601#journal"
+              "text": "关键原则",
+              "link": "/pages/0601#关键原则"
             }
           ]
         },
         {
-          "text": "核心资金流程",
+          "text": "资产分析与报告",
           "link": "/pages/0602",
           "items": [
             {
-              "text": "账户划转",
-              "link": "/pages/0602#transfer"
+              "text": "桌面端路径",
+              "link": "/pages/0602#桌面端路径"
             },
             {
-              "text": "冻结与释放",
-              "link": "/pages/0602#freeze"
+              "text": "手机端路径",
+              "link": "/pages/0602#手机端路径"
             },
             {
-              "text": "扣款与入账",
-              "link": "/pages/0602#settlement"
-            }
-          ]
-        },
-        {
-          "text": "对账与资金一致性",
-          "link": "/pages/0603",
-          "items": [
-            {
-              "text": "对账层次",
-              "link": "/pages/0603#对账层次"
-            },
-            {
-              "text": "差异处理",
-              "link": "/pages/0603#差异处理"
-            },
-            {
-              "text": "一致性目标",
-              "link": "/pages/0603#一致性目标"
+              "text": "异常",
+              "link": "/pages/0602#异常"
             }
           ]
         }
@@ -378,139 +378,51 @@
     },
     {
       "key": "section-07",
-      "text": "现货手册",
+      "text": "策略与回测",
       "items": [
         {
-          "text": "业务概述",
+          "text": "策略中心与IDE",
           "link": "/pages/0701",
           "items": [
             {
-              "text": "现货交易基础",
-              "link": "/pages/0701#basics"
+              "text": "职责拆分",
+              "link": "/pages/0701#职责拆分"
             },
             {
-              "text": "交易界面与核心术语",
-              "link": "/pages/0701#interface"
+              "text": "核心对象",
+              "link": "/pages/0701#核心对象"
             },
             {
-              "text": "建议阅读顺序",
-              "link": "/pages/0701#建议阅读顺序"
+              "text": "API 分组",
+              "link": "/pages/0701#API 分组"
             }
           ]
         },
         {
-          "text": "系统架构",
+          "text": "回测中心",
           "link": "/pages/0702",
           "items": [
             {
-              "text": "模块划分与职责",
-              "link": "/pages/0702#modules"
+              "text": "流程",
+              "link": "/pages/0702#流程"
             },
             {
-              "text": "模块交互与数据流向",
-              "link": "/pages/0702#dataflow"
-            },
-            {
-              "text": "工程事实",
-              "link": "/pages/0702#facts"
+              "text": "阅读结果时注意",
+              "link": "/pages/0702#阅读结果时注意"
             }
           ]
         },
         {
-          "text": "交易规则",
+          "text": "执行器与机器人",
           "link": "/pages/0703",
           "items": [
             {
-              "text": "币种与交易对",
-              "link": "/pages/0703#pairs"
+              "text": "执行链路",
+              "link": "/pages/0703#执行链路"
             },
             {
-              "text": "订单类型",
-              "link": "/pages/0703#types"
-            },
-            {
-              "text": "精度、限额与手续费",
-              "link": "/pages/0703#limits"
-            }
-          ]
-        },
-        {
-          "text": "核心设计",
-          "link": "/pages/0704",
-          "items": [
-            {
-              "text": "账户与资产",
-              "link": "/pages/0704#account"
-            },
-            {
-              "text": "订单与状态流转",
-              "link": "/pages/0704#states"
-            },
-            {
-              "text": "订单簿与撮合机制",
-              "link": "/pages/0704#orderbook"
-            }
-          ]
-        },
-        {
-          "text": "核心交易流程",
-          "link": "/pages/0705",
-          "items": [
-            {
-              "text": "完整交易流程",
-              "link": "/pages/0705#complete"
-            },
-            {
-              "text": "下单与资金冻结",
-              "link": "/pages/0705#place"
-            },
-            {
-              "text": "撮合与成交",
-              "link": "/pages/0705#match"
-            },
-            {
-              "text": "成交结算",
-              "link": "/pages/0705#settle"
-            },
-            {
-              "text": "撤单与资金解冻",
-              "link": "/pages/0705#cancel"
-            }
-          ]
-        },
-        {
-          "text": "行情与推送",
-          "link": "/pages/0706",
-          "items": [
-            {
-              "text": "三类数据",
-              "link": "/pages/0706#types"
-            },
-            {
-              "text": "推送流程",
-              "link": "/pages/0706#push"
-            },
-            {
-              "text": "断线恢复",
-              "link": "/pages/0706#reconnect"
-            }
-          ]
-        },
-        {
-          "text": "异常处理与一致性保障",
-          "link": "/pages/0707",
-          "items": [
-            {
-              "text": "典型场景",
-              "link": "/pages/0707#scenarios"
-            },
-            {
-              "text": "用贯穿示例核对",
-              "link": "/pages/0707#example"
-            },
-            {
-              "text": "检查方法",
-              "link": "/pages/0707#check"
+              "text": "风险点",
+              "link": "/pages/0703#风险点"
             }
           ]
         }
@@ -518,99 +430,37 @@
     },
     {
       "key": "section-08",
-      "text": "合约手册",
+      "text": "交易与券商",
       "items": [
         {
-          "text": "业务概述与系统架构",
+          "text": "交易所凭证与券商",
           "link": "/pages/0801",
           "items": [
             {
-              "text": "产品与术语",
-              "link": "/pages/0801#basics"
+              "text": "能力范围",
+              "link": "/pages/0801#能力范围"
             },
             {
-              "text": "模块架构",
-              "link": "/pages/0801#architecture"
+              "text": "券商 API 形态",
+              "link": "/pages/0801#券商 API 形态"
+            },
+            {
+              "text": "安全要求",
+              "link": "/pages/0801#安全要求"
             }
           ]
         },
         {
-          "text": "交易规则",
+          "text": "闪电交易",
           "link": "/pages/0802",
           "items": [
             {
-              "text": "开仓、平仓与方向",
-              "link": "/pages/0802#direction"
+              "text": "接口分组",
+              "link": "/pages/0802#接口分组"
             },
             {
-              "text": "杠杆与保证金",
-              "link": "/pages/0802#margin"
-            },
-            {
-              "text": "价格、限额与费用",
-              "link": "/pages/0802#fees"
-            }
-          ]
-        },
-        {
-          "text": "核心设计",
-          "link": "/pages/0803",
-          "items": [
-            {
-              "text": "账户与持仓",
-              "link": "/pages/0803#position"
-            },
-            {
-              "text": "订单状态",
-              "link": "/pages/0803#orders"
-            },
-            {
-              "text": "保证金与盈亏",
-              "link": "/pages/0803#pnl"
-            },
-            {
-              "text": "风险与强平",
-              "link": "/pages/0803#risk"
-            }
-          ]
-        },
-        {
-          "text": "核心交易流程",
-          "link": "/pages/0804",
-          "items": [
-            {
-              "text": "完整交易流程",
-              "link": "/pages/0804#complete"
-            },
-            {
-              "text": "开仓与成交",
-              "link": "/pages/0804#open"
-            },
-            {
-              "text": "持仓与保证金调整",
-              "link": "/pages/0804#adjust"
-            },
-            {
-              "text": "平仓与结算",
-              "link": "/pages/0804#close"
-            },
-            {
-              "text": "强平与清算",
-              "link": "/pages/0804#liquidation"
-            }
-          ]
-        },
-        {
-          "text": "行情与异常处理",
-          "link": "/pages/0805",
-          "items": [
-            {
-              "text": "合约价格体系",
-              "link": "/pages/0805#prices"
-            },
-            {
-              "text": "异常与一致性",
-              "link": "/pages/0805#exceptions"
+              "text": "使用原则",
+              "link": "/pages/0802#使用原则"
             }
           ]
         }
@@ -618,91 +468,41 @@
     },
     {
       "key": "section-09",
-      "text": "期权手册",
+      "text": "指标与行情",
       "items": [
         {
-          "text": "业务概述与版本说明",
+          "text": "指标IDE与社区",
           "link": "/pages/0901",
           "items": [
             {
-              "text": "产品与版本",
-              "link": "/pages/0901#versions"
+              "text": "指标 IDE",
+              "link": "/pages/0901#指标 IDE"
             },
             {
-              "text": "系统架构",
-              "link": "/pages/0901#architecture"
+              "text": "指标社区",
+              "link": "/pages/0901#指标社区"
+            },
+            {
+              "text": "边界",
+              "link": "/pages/0901#边界"
             }
           ]
         },
         {
-          "text": "产品与交易规则",
+          "text": "行情与资产池",
           "link": "/pages/0902",
           "items": [
             {
-              "text": "方向与期限",
-              "link": "/pages/0902#direction"
+              "text": "行情",
+              "link": "/pages/0902#行情"
             },
             {
-              "text": "下单条件与限额",
-              "link": "/pages/0902#limits"
+              "text": "Universe",
+              "link": "/pages/0902#Universe"
             },
             {
-              "text": "结果与收益规则",
-              "link": "/pages/0902#result"
-            }
-          ]
-        },
-        {
-          "text": "核心设计",
-          "link": "/pages/0903",
-          "items": [
-            {
-              "text": "账户与资产",
-              "link": "/pages/0903#account"
-            },
-            {
-              "text": "订单与周期状态",
-              "link": "/pages/0903#states"
-            },
-            {
-              "text": "价格依据与结算机制",
-              "link": "/pages/0903#price"
-            }
-          ]
-        },
-        {
-          "text": "核心交易流程",
-          "link": "/pages/0904",
-          "items": [
-            {
-              "text": "完整交易流程",
-              "link": "/pages/0904#complete"
-            },
-            {
-              "text": "下单与资金处理",
-              "link": "/pages/0904#place"
-            },
-            {
-              "text": "到期与结果判定",
-              "link": "/pages/0904#expiry"
-            },
-            {
-              "text": "收益结算与入账",
-              "link": "/pages/0904#settle"
-            }
-          ]
-        },
-        {
-          "text": "行情与异常处理",
-          "link": "/pages/0905",
-          "items": [
-            {
-              "text": "行情与推送",
-              "link": "/pages/0905#market"
-            },
-            {
-              "text": "异常与一致性",
-              "link": "/pages/0905#exceptions"
+              "text": "手机图表",
+              "link": "/pages/0902#手机图表"
             }
           ]
         }
@@ -710,77 +510,41 @@
     },
     {
       "key": "section-10",
-      "text": "钱包手册",
+      "text": "用户计费与运营",
       "items": [
         {
-          "text": "业务概述与钱包架构",
+          "text": "登录鉴权与个人中心",
           "link": "/pages/1001",
           "items": [
             {
-              "text": "职责边界",
-              "link": "/pages/1001#职责边界"
+              "text": "登录",
+              "link": "/pages/1001#登录"
             },
             {
-              "text": "工程事实",
-              "link": "/pages/1001#工程事实"
+              "text": "个人中心",
+              "link": "/pages/1001#个人中心"
+            },
+            {
+              "text": "安全",
+              "link": "/pages/1001#安全"
             }
           ]
         },
         {
-          "text": "核心设计",
+          "text": "计费会员与后台",
           "link": "/pages/1002",
           "items": [
             {
-              "text": "币种与网络",
-              "link": "/pages/1002#network"
+              "text": "计费",
+              "link": "/pages/1002#计费"
             },
             {
-              "text": "地址管理",
-              "link": "/pages/1002#address"
+              "text": "后台",
+              "link": "/pages/1002#后台"
             },
             {
-              "text": "交易与确认数",
-              "link": "/pages/1002#confirmations"
-            },
-            {
-              "text": "钱包与内部账务",
-              "link": "/pages/1002#ledger"
-            }
-          ]
-        },
-        {
-          "text": "核心充提流程",
-          "link": "/pages/1003",
-          "items": [
-            {
-              "text": "充值监听与入账",
-              "link": "/pages/1003#deposit"
-            },
-            {
-              "text": "提现申请与审核",
-              "link": "/pages/1003#review"
-            },
-            {
-              "text": "提现发送与确认",
-              "link": "/pages/1003#withdraw"
-            },
-            {
-              "text": "资金归集",
-              "link": "/pages/1003#collection"
-            }
-          ]
-        },
-        {
-          "text": "核对、安全与异常处理",
-          "link": "/pages/1004",
-          "items": [
-            {
-              "text": "充提核对与监控",
-              "link": "/pages/1004#monitor"
-            },
-            {
-              "text": "安全与异常处理",
-              "link": "/pages/1004#exceptions"
+              "text": "品牌与设置",
+              "link": "/pages/1002#品牌与设置"
             }
           ]
         }
@@ -788,85 +552,41 @@
     },
     {
       "key": "section-11",
-      "text": "OTC 手册",
+      "text": "接口约定",
       "items": [
         {
-          "text": "业务概述与系统架构",
+          "text": "接口约定与鉴权",
           "link": "/pages/1101",
           "items": [
             {
-              "text": "参与者",
-              "link": "/pages/1101#参与者"
+              "text": "已核实约定",
+              "link": "/pages/1101#已核实约定"
             },
             {
-              "text": "模块架构",
-              "link": "/pages/1101#模块架构"
+              "text": "协议项清单",
+              "link": "/pages/1101#协议项清单"
+            },
+            {
+              "text": "不在本文展开",
+              "link": "/pages/1101#不在本文展开"
             }
           ]
         },
         {
-          "text": "商家、规则与核心设计",
+          "text": "业务接口分组",
           "link": "/pages/1102",
           "items": [
             {
-              "text": "商家与交易规则",
-              "link": "/pages/1102#merchant"
+              "text": "分组一览",
+              "link": "/pages/1102#分组一览"
             },
             {
-              "text": "广告与委托",
-              "link": "/pages/1102#advert"
+              "text": "错误处理",
+              "link": "/pages/1102#错误处理"
             },
             {
-              "text": "订单状态",
-              "link": "/pages/1102#states"
-            },
-            {
-              "text": "冻结与释放",
-              "link": "/pages/1102#funds"
-            }
-          ]
-        },
-        {
-          "text": "核心交易流程",
-          "link": "/pages/1103",
-          "items": [
-            {
-              "text": "广告发布",
-              "link": "/pages/1103#advert"
-            },
-            {
-              "text": "下单与付款确认",
-              "link": "/pages/1103#payment"
-            },
-            {
-              "text": "放币与成交",
-              "link": "/pages/1103#release"
-            },
-            {
-              "text": "取消与超时",
-              "link": "/pages/1103#cancel"
-            },
-            {
-              "text": "申诉处理",
-              "link": "/pages/1103#appeal"
-            }
-          ]
-        },
-        {
-          "text": "风控与异常处理",
-          "link": "/pages/1104",
-          "items": [
-            {
-              "text": "典型问题",
-              "link": "/pages/1104#典型问题"
-            },
-            {
-              "text": "核对顺序",
-              "link": "/pages/1104#核对顺序"
-            },
-            {
-              "text": "一致性目标",
-              "link": "/pages/1104#一致性目标"
+              "text": "版本兼容",
+              "link": "/pages/1102#版本兼容"
             }
           ]
         }
@@ -874,311 +594,33 @@
     },
     {
       "key": "section-12",
-      "text": "机器人与量化",
-      "items": [
-        {
-          "text": "业务概述与外部接入",
-          "link": "/pages/1201",
-          "items": [
-            {
-              "text": "模块概述",
-              "link": "/pages/1201#modules"
-            },
-            {
-              "text": "外部平台接入",
-              "link": "/pages/1201#external"
-            },
-            {
-              "text": "机器人交易机制",
-              "link": "/pages/1201#robot"
-            }
-          ]
-        },
-        {
-          "text": "策略与跟单流程",
-          "link": "/pages/1202",
-          "items": [
-            {
-              "text": "策略与跟单设计",
-              "link": "/pages/1202#design"
-            },
-            {
-              "text": "核心流程",
-              "link": "/pages/1202#flows"
-            },
-            {
-              "text": "风险与异常",
-              "link": "/pages/1202#risk"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "key": "section-13",
-      "text": "运营与奖励",
-      "items": [
-        {
-          "text": "活动与内容管理",
-          "link": "/pages/1301",
-          "items": [
-            {
-              "text": "活动概述",
-              "link": "/pages/1301#活动概述"
-            },
-            {
-              "text": "活动参与流程",
-              "link": "/pages/1301#活动参与流程"
-            },
-            {
-              "text": "内容与公告",
-              "link": "/pages/1301#内容与公告"
-            }
-          ]
-        },
-        {
-          "text": "邀请关系与奖励流程",
-          "link": "/pages/1302",
-          "items": [
-            {
-              "text": "关系与奖励设计",
-              "link": "/pages/1302#关系与奖励设计"
-            },
-            {
-              "text": "计算与发放流程",
-              "link": "/pages/1302#计算与发放流程"
-            },
-            {
-              "text": "异常处理",
-              "link": "/pages/1302#异常处理"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "key": "section-14",
-      "text": "商户与后台管理",
-      "items": [
-        {
-          "text": "总后台、商户与权限",
-          "link": "/pages/1401",
-          "items": [
-            {
-              "text": "总后台与商户后台",
-              "link": "/pages/1401#backoffice"
-            },
-            {
-              "text": "商户与应用配置",
-              "link": "/pages/1401#partner"
-            },
-            {
-              "text": "角色、菜单与数据权限",
-              "link": "/pages/1401#permissions"
-            }
-          ]
-        },
-        {
-          "text": "产品管理与审核流程",
-          "link": "/pages/1402",
-          "items": [
-            {
-              "text": "币种与交易产品管理",
-              "link": "/pages/1402#products"
-            },
-            {
-              "text": "用户、订单与资金管理",
-              "link": "/pages/1402#management"
-            },
-            {
-              "text": "关键操作与审核",
-              "link": "/pages/1402#approval"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "key": "section-15",
-      "text": "报表与风控",
-      "items": [
-        {
-          "text": "统计指标与资产报表",
-          "link": "/pages/1501",
-          "items": [
-            {
-              "text": "统计维度与口径",
-              "link": "/pages/1501#definitions"
-            },
-            {
-              "text": "用户与交易报表",
-              "link": "/pages/1501#trading"
-            },
-            {
-              "text": "资产报表与对账结果",
-              "link": "/pages/1501#assets"
-            }
-          ]
-        },
-        {
-          "text": "风控规则与事件处理",
-          "link": "/pages/1502",
-          "items": [
-            {
-              "text": "规则设计",
-              "link": "/pages/1502#rules"
-            },
-            {
-              "text": "风险事件处理",
-              "link": "/pages/1502#events"
-            },
-            {
-              "text": "误报与恢复",
-              "link": "/pages/1502#误报与恢复"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "key": "section-16",
-      "text": "公共基础服务",
-      "items": [
-        {
-          "text": "公共组件与配置",
-          "link": "/pages/1601",
-          "items": [
-            {
-              "text": "公共组件",
-              "link": "/pages/1601#公共组件"
-            },
-            {
-              "text": "配置管理",
-              "link": "/pages/1601#配置管理"
-            },
-            {
-              "text": "日志与链路",
-              "link": "/pages/1601#日志与链路"
-            }
-          ]
-        },
-        {
-          "text": "消息、上传与国际化",
-          "link": "/pages/1602",
-          "items": [
-            {
-              "text": "消息、短信与邮件",
-              "link": "/pages/1602#messages"
-            },
-            {
-              "text": "文件上传",
-              "link": "/pages/1602#upload"
-            },
-            {
-              "text": "国际化",
-              "link": "/pages/1602#i18n"
-            },
-            {
-              "text": "定时任务",
-              "link": "/pages/1602#tasks"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "key": "section-17",
-      "text": "接口文档",
-      "items": [
-        {
-          "text": "接口约定与鉴权",
-          "link": "/pages/1701",
-          "items": [
-            {
-              "text": "文档范围",
-              "link": "/pages/1701#文档范围"
-            },
-            {
-              "text": "必须说明的协议项",
-              "link": "/pages/1701#必须说明的协议项"
-            },
-            {
-              "text": "鉴权与权限",
-              "link": "/pages/1701#鉴权与权限"
-            }
-          ]
-        },
-        {
-          "text": "业务接口与错误处理",
-          "link": "/pages/1702",
-          "items": [
-            {
-              "text": "用户与资产接口",
-              "link": "/pages/1702#account"
-            },
-            {
-              "text": "交易业务接口",
-              "link": "/pages/1702#trading"
-            },
-            {
-              "text": "行情与 WebSocket",
-              "link": "/pages/1702#websocket"
-            },
-            {
-              "text": "错误码",
-              "link": "/pages/1702#errors"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "key": "section-18",
       "text": "部署与运维",
       "items": [
         {
-          "text": "部署架构与服务配置",
-          "link": "/pages/1801",
+          "text": "部署架构",
+          "link": "/pages/1201",
           "items": [
             {
-              "text": "环境依赖",
-              "link": "/pages/1801#dependencies"
+              "text": "推荐拓扑",
+              "link": "/pages/1201#推荐拓扑"
             },
             {
-              "text": "部署与启动顺序",
-              "link": "/pages/1801#startup"
+              "text": "发布检查",
+              "link": "/pages/1201#发布检查"
             },
             {
-              "text": "配置管理",
-              "link": "/pages/1801#configuration"
-            }
-          ]
-        },
-        {
-          "text": "监控、备份与恢复",
-          "link": "/pages/1802",
-          "items": [
-            {
-              "text": "日志、监控与告警",
-              "link": "/pages/1802#monitor"
-            },
-            {
-              "text": "备份与恢复",
-              "link": "/pages/1802#backup"
-            },
-            {
-              "text": "恢复验证",
-              "link": "/pages/1802#恢复验证"
+              "text": "文档站",
+              "link": "/pages/1201#文档站"
             }
           ]
         },
         {
           "text": "常见故障排查",
-          "link": "/pages/1803",
+          "link": "/pages/1202",
           "items": [
             {
-              "text": "排查记录",
-              "link": "/pages/1803#排查记录"
+              "text": "排查顺序",
+              "link": "/pages/1202#排查顺序"
             }
           ]
         }
@@ -1194,8 +636,9 @@
       "code": "0101",
       "headings": [
         "文档面向谁",
-        "内容如何区分",
-        "版本边界"
+        "工作区工程",
+        "内容边界",
+        "版本说明"
       ]
     },
     {
@@ -1205,8 +648,9 @@
       "source": "01.项目介绍/02.功能全景.md",
       "code": "0102",
       "headings": [
-        "核心业务",
-        "支撑业务"
+        "核心能力",
+        "客户端分工",
+        "支撑能力"
       ]
     },
     {
@@ -1216,9 +660,9 @@
       "source": "01.项目介绍/03.技术栈.md",
       "code": "0103",
       "headings": [
-        "已观察到的技术组成",
-        "各层职责",
-        "选型与边界"
+        "工作区技术组成",
+        "接入与运行时",
+        "选型边界"
       ]
     },
     {
@@ -1230,7 +674,7 @@
       "headings": [
         "推荐学习路线",
         "每篇文档怎样读",
-        "贯穿示例"
+        "贯穿原则"
       ]
     },
     {
@@ -1240,7 +684,7 @@
       "source": "02.快速开始/01.环境准备.md",
       "code": "0201",
       "headings": [
-        "环境组成",
+        "运行时要求",
         "准备顺序",
         "环境边界"
       ]
@@ -1252,20 +696,23 @@
       "source": "02.快速开始/02.工程结构.md",
       "code": "0202",
       "headings": [
-        "服务不是一个单体应用",
-        "找到一条业务链"
+        "工作区布局",
+        "桌面端关键目录",
+        "手机端关键目录"
       ]
     },
     {
       "path": "/pages/0203",
-      "title": "服务启动与验证",
+      "title": "本地启动",
       "group": "快速开始",
-      "source": "02.快速开始/03.服务启动与验证.md",
+      "source": "02.快速开始/03.本地启动.md",
       "code": "0203",
       "headings": [
-        "建议启动层次",
-        "启动后验证",
-        "系统访问"
+        "启动前",
+        "chattrade.org",
+        "chattrade-web",
+        "chattrade-mobile",
+        "启动后验证"
       ]
     },
     {
@@ -1275,634 +722,281 @@
       "source": "03.系统架构/01.整体架构.md",
       "code": "0301",
       "headings": [
+        "分层示意",
         "四类职责",
-        "架构原则",
         "工程映射"
       ]
     },
     {
       "path": "/pages/0302",
-      "title": "服务通信与消息流转",
+      "title": "客户端与API接入",
       "group": "系统架构",
-      "source": "03.系统架构/02.服务通信与消息流转.md",
+      "source": "03.系统架构/02.客户端与API接入.md",
       "code": "0302",
       "headings": [
-        "通信方式",
-        "超时的含义",
-        "设计目标"
+        "统一前缀",
+        "身份传递",
+        "超时语义",
+        "WebSocket"
       ]
     },
     {
       "path": "/pages/0303",
-      "title": "数据存储与缓存",
+      "title": "数据与会话",
       "group": "系统架构",
-      "source": "03.系统架构/03.数据存储与缓存.md",
+      "source": "03.系统架构/03.数据与会话.md",
       "code": "0303",
       "headings": [
-        "数据分工",
-        "数据关系",
-        "恢复设计"
-      ]
-    },
-    {
-      "path": "/pages/0304",
-      "title": "多商户架构",
-      "group": "系统架构",
-      "source": "03.系统架构/04.多商户架构.md",
-      "code": "0304",
-      "headings": [
-        "已观察到的结构",
-        "隔离维度",
-        "配置生效流程"
+        "三类数据",
+        "会话生命周期",
+        "缓存与刷新"
       ]
     },
     {
       "path": "/pages/0401",
-      "title": "币种、网络与账户",
-      "group": "基础知识",
-      "source": "04.基础知识/01.币种、网络与账户.md",
+      "title": "产品界面与路由",
+      "group": "桌面端 Web",
+      "source": "04.桌面端 Web/01.产品界面与路由.md",
       "code": "0401",
       "headings": [
-        "币种和网络",
-        "交易对",
-        "账户"
+        "默认入口",
+        "主要路由",
+        "权限"
       ]
     },
     {
       "path": "/pages/0402",
-      "title": "委托、撮合与成交",
-      "group": "基础知识",
-      "source": "04.基础知识/02.委托、撮合与成交.md",
+      "title": "核心工作流",
+      "group": "桌面端 Web",
+      "source": "04.桌面端 Web/02.核心工作流.md",
       "code": "0402",
       "headings": [
-        "三个对象",
-        "状态与数量",
-        "盘口、行情与 K 线"
+        "研究到执行",
+        "API 线索",
+        "与手机端关系"
       ]
     },
     {
       "path": "/pages/0403",
-      "title": "现货、合约与期权",
-      "group": "基础知识",
-      "source": "04.基础知识/03.现货、合约与期权.md",
+      "title": "本地开发与构建",
+      "group": "桌面端 Web",
+      "source": "04.桌面端 Web/03.本地开发与构建.md",
       "code": "0403",
       "headings": [
-        "期权用语的边界"
+        "开发",
+        "构建",
+        "校验建议"
       ]
     },
     {
       "path": "/pages/0501",
-      "title": "用户与账户体系",
-      "group": "用户与账户",
-      "source": "05.用户与账户/01.用户与账户体系.md",
+      "title": "产品能力与路由",
+      "group": "手机端",
+      "source": "05.手机端/01.产品能力与路由.md",
       "code": "0501",
       "headings": [
-        "业务对象",
-        "用户关系"
+        "定位",
+        "主要路由",
+        "与桌面端差异"
       ]
     },
     {
       "path": "/pages/0502",
-      "title": "注册、登录与认证流程",
-      "group": "用户与账户",
-      "source": "05.用户与账户/02.注册、登录与认证流程.md",
+      "title": "H5与原生打包",
+      "group": "手机端",
+      "source": "05.手机端/02.H5与原生打包.md",
       "code": "0502",
       "headings": [
-        "login",
-        "verification",
-        "security"
+        "发布形态",
+        "后端连接",
+        "注意点"
       ]
     },
     {
       "path": "/pages/0503",
-      "title": "权限与账户保护",
-      "group": "用户与账户",
-      "source": "05.用户与账户/03.权限与账户保护.md",
+      "title": "本地开发与构建",
+      "group": "手机端",
+      "source": "05.手机端/03.本地开发与构建.md",
       "code": "0503",
       "headings": [
-        "权限设计",
-        "账户保护流程",
-        "审计要求"
+        "开发",
+        "构建",
+        "验证"
       ]
     },
     {
       "path": "/pages/0601",
-      "title": "资产体系与余额设计",
-      "group": "资产与账务",
-      "source": "06.资产与账务/01.资产体系与余额设计.md",
+      "title": "业务概述",
+      "group": "AI 研究与分析",
+      "source": "06.AI 研究与分析/01.业务概述.md",
       "code": "0601",
       "headings": [
-        "accounts",
-        "balances",
-        "journal"
+        "目标",
+        "参与者",
+        "关键原则"
       ]
     },
     {
       "path": "/pages/0602",
-      "title": "核心资金流程",
-      "group": "资产与账务",
-      "source": "06.资产与账务/02.核心资金流程.md",
+      "title": "资产分析与报告",
+      "group": "AI 研究与分析",
+      "source": "06.AI 研究与分析/02.资产分析与报告.md",
       "code": "0602",
       "headings": [
-        "transfer",
-        "freeze",
-        "settlement"
-      ]
-    },
-    {
-      "path": "/pages/0603",
-      "title": "对账与资金一致性",
-      "group": "资产与账务",
-      "source": "06.资产与账务/03.对账与资金一致性.md",
-      "code": "0603",
-      "headings": [
-        "对账层次",
-        "差异处理",
-        "一致性目标"
+        "桌面端路径",
+        "手机端路径",
+        "异常"
       ]
     },
     {
       "path": "/pages/0701",
-      "title": "业务概述",
-      "group": "现货手册",
-      "source": "07.现货手册/01.业务概述.md",
+      "title": "策略中心与IDE",
+      "group": "策略与回测",
+      "source": "07.策略与回测/01.策略中心与IDE.md",
       "code": "0701",
       "headings": [
-        "basics",
-        "interface",
-        "建议阅读顺序"
+        "职责拆分",
+        "核心对象",
+        "API 分组"
       ]
     },
     {
       "path": "/pages/0702",
-      "title": "系统架构",
-      "group": "现货手册",
-      "source": "07.现货手册/02.系统架构.md",
+      "title": "回测中心",
+      "group": "策略与回测",
+      "source": "07.策略与回测/02.回测中心.md",
       "code": "0702",
       "headings": [
-        "modules",
-        "dataflow",
-        "facts"
+        "流程",
+        "阅读结果时注意"
       ]
     },
     {
       "path": "/pages/0703",
-      "title": "交易规则",
-      "group": "现货手册",
-      "source": "07.现货手册/03.交易规则.md",
+      "title": "执行器与机器人",
+      "group": "策略与回测",
+      "source": "07.策略与回测/03.执行器与机器人.md",
       "code": "0703",
       "headings": [
-        "pairs",
-        "types",
-        "limits"
-      ]
-    },
-    {
-      "path": "/pages/0704",
-      "title": "核心设计",
-      "group": "现货手册",
-      "source": "07.现货手册/04.核心设计.md",
-      "code": "0704",
-      "headings": [
-        "account",
-        "states",
-        "orderbook"
-      ]
-    },
-    {
-      "path": "/pages/0705",
-      "title": "核心交易流程",
-      "group": "现货手册",
-      "source": "07.现货手册/05.核心交易流程.md",
-      "code": "0705",
-      "headings": [
-        "complete",
-        "place",
-        "match",
-        "settle",
-        "cancel"
-      ]
-    },
-    {
-      "path": "/pages/0706",
-      "title": "行情与推送",
-      "group": "现货手册",
-      "source": "07.现货手册/06.行情与推送.md",
-      "code": "0706",
-      "headings": [
-        "types",
-        "push",
-        "reconnect"
-      ]
-    },
-    {
-      "path": "/pages/0707",
-      "title": "异常处理与一致性保障",
-      "group": "现货手册",
-      "source": "07.现货手册/07.异常处理与一致性保障.md",
-      "code": "0707",
-      "headings": [
-        "scenarios",
-        "example",
-        "check"
+        "执行链路",
+        "风险点"
       ]
     },
     {
       "path": "/pages/0801",
-      "title": "业务概述与系统架构",
-      "group": "合约手册",
-      "source": "08.合约手册/01.业务概述与系统架构.md",
+      "title": "交易所凭证与券商",
+      "group": "交易与券商",
+      "source": "08.交易与券商/01.交易所凭证与券商.md",
       "code": "0801",
       "headings": [
-        "basics",
-        "architecture"
+        "能力范围",
+        "券商 API 形态",
+        "安全要求"
       ]
     },
     {
       "path": "/pages/0802",
-      "title": "交易规则",
-      "group": "合约手册",
-      "source": "08.合约手册/02.交易规则.md",
+      "title": "闪电交易",
+      "group": "交易与券商",
+      "source": "08.交易与券商/02.闪电交易.md",
       "code": "0802",
       "headings": [
-        "direction",
-        "margin",
-        "fees"
-      ]
-    },
-    {
-      "path": "/pages/0803",
-      "title": "核心设计",
-      "group": "合约手册",
-      "source": "08.合约手册/03.核心设计.md",
-      "code": "0803",
-      "headings": [
-        "position",
-        "orders",
-        "pnl",
-        "risk"
-      ]
-    },
-    {
-      "path": "/pages/0804",
-      "title": "核心交易流程",
-      "group": "合约手册",
-      "source": "08.合约手册/04.核心交易流程.md",
-      "code": "0804",
-      "headings": [
-        "complete",
-        "open",
-        "adjust",
-        "close",
-        "liquidation"
-      ]
-    },
-    {
-      "path": "/pages/0805",
-      "title": "行情与异常处理",
-      "group": "合约手册",
-      "source": "08.合约手册/05.行情与异常处理.md",
-      "code": "0805",
-      "headings": [
-        "prices",
-        "exceptions"
+        "接口分组",
+        "使用原则"
       ]
     },
     {
       "path": "/pages/0901",
-      "title": "业务概述与版本说明",
-      "group": "期权手册",
-      "source": "09.期权手册/01.业务概述与版本说明.md",
+      "title": "指标IDE与社区",
+      "group": "指标与行情",
+      "source": "09.指标与行情/01.指标IDE与社区.md",
       "code": "0901",
       "headings": [
-        "versions",
-        "architecture"
+        "指标 IDE",
+        "指标社区",
+        "边界"
       ]
     },
     {
       "path": "/pages/0902",
-      "title": "产品与交易规则",
-      "group": "期权手册",
-      "source": "09.期权手册/02.产品与交易规则.md",
+      "title": "行情与资产池",
+      "group": "指标与行情",
+      "source": "09.指标与行情/02.行情与资产池.md",
       "code": "0902",
       "headings": [
-        "direction",
-        "limits",
-        "result"
-      ]
-    },
-    {
-      "path": "/pages/0903",
-      "title": "核心设计",
-      "group": "期权手册",
-      "source": "09.期权手册/03.核心设计.md",
-      "code": "0903",
-      "headings": [
-        "account",
-        "states",
-        "price"
-      ]
-    },
-    {
-      "path": "/pages/0904",
-      "title": "核心交易流程",
-      "group": "期权手册",
-      "source": "09.期权手册/04.核心交易流程.md",
-      "code": "0904",
-      "headings": [
-        "complete",
-        "place",
-        "expiry",
-        "settle"
-      ]
-    },
-    {
-      "path": "/pages/0905",
-      "title": "行情与异常处理",
-      "group": "期权手册",
-      "source": "09.期权手册/05.行情与异常处理.md",
-      "code": "0905",
-      "headings": [
-        "market",
-        "exceptions"
+        "行情",
+        "Universe",
+        "手机图表"
       ]
     },
     {
       "path": "/pages/1001",
-      "title": "业务概述与钱包架构",
-      "group": "钱包手册",
-      "source": "10.钱包手册/01.业务概述与钱包架构.md",
+      "title": "登录鉴权与个人中心",
+      "group": "用户计费与运营",
+      "source": "10.用户计费与运营/01.登录鉴权与个人中心.md",
       "code": "1001",
       "headings": [
-        "职责边界",
-        "工程事实"
+        "登录",
+        "个人中心",
+        "安全"
       ]
     },
     {
       "path": "/pages/1002",
-      "title": "核心设计",
-      "group": "钱包手册",
-      "source": "10.钱包手册/02.核心设计.md",
+      "title": "计费会员与后台",
+      "group": "用户计费与运营",
+      "source": "10.用户计费与运营/02.计费会员与后台.md",
       "code": "1002",
       "headings": [
-        "network",
-        "address",
-        "confirmations",
-        "ledger"
-      ]
-    },
-    {
-      "path": "/pages/1003",
-      "title": "核心充提流程",
-      "group": "钱包手册",
-      "source": "10.钱包手册/03.核心充提流程.md",
-      "code": "1003",
-      "headings": [
-        "deposit",
-        "review",
-        "withdraw",
-        "collection"
-      ]
-    },
-    {
-      "path": "/pages/1004",
-      "title": "核对、安全与异常处理",
-      "group": "钱包手册",
-      "source": "10.钱包手册/04.核对、安全与异常处理.md",
-      "code": "1004",
-      "headings": [
-        "monitor",
-        "exceptions"
+        "计费",
+        "后台",
+        "品牌与设置"
       ]
     },
     {
       "path": "/pages/1101",
-      "title": "业务概述与系统架构",
-      "group": "OTC 手册",
-      "source": "11.OTC 手册/01.业务概述与系统架构.md",
+      "title": "接口约定与鉴权",
+      "group": "接口约定",
+      "source": "11.接口约定/01.接口约定与鉴权.md",
       "code": "1101",
       "headings": [
-        "参与者",
-        "模块架构"
+        "已核实约定",
+        "协议项清单",
+        "不在本文展开"
       ]
     },
     {
       "path": "/pages/1102",
-      "title": "商家、规则与核心设计",
-      "group": "OTC 手册",
-      "source": "11.OTC 手册/02.商家、规则与核心设计.md",
+      "title": "业务接口分组",
+      "group": "接口约定",
+      "source": "11.接口约定/02.业务接口分组.md",
       "code": "1102",
       "headings": [
-        "merchant",
-        "advert",
-        "states",
-        "funds"
-      ]
-    },
-    {
-      "path": "/pages/1103",
-      "title": "核心交易流程",
-      "group": "OTC 手册",
-      "source": "11.OTC 手册/03.核心交易流程.md",
-      "code": "1103",
-      "headings": [
-        "advert",
-        "payment",
-        "release",
-        "cancel",
-        "appeal"
-      ]
-    },
-    {
-      "path": "/pages/1104",
-      "title": "风控与异常处理",
-      "group": "OTC 手册",
-      "source": "11.OTC 手册/04.风控与异常处理.md",
-      "code": "1104",
-      "headings": [
-        "典型问题",
-        "核对顺序",
-        "一致性目标"
+        "分组一览",
+        "错误处理",
+        "版本兼容"
       ]
     },
     {
       "path": "/pages/1201",
-      "title": "业务概述与外部接入",
-      "group": "机器人与量化",
-      "source": "12.机器人与量化/01.业务概述与外部接入.md",
+      "title": "部署架构",
+      "group": "部署与运维",
+      "source": "12.部署与运维/01.部署架构.md",
       "code": "1201",
       "headings": [
-        "modules",
-        "external",
-        "robot"
+        "推荐拓扑",
+        "发布检查",
+        "文档站"
       ]
     },
     {
       "path": "/pages/1202",
-      "title": "策略与跟单流程",
-      "group": "机器人与量化",
-      "source": "12.机器人与量化/02.策略与跟单流程.md",
-      "code": "1202",
-      "headings": [
-        "design",
-        "flows",
-        "risk"
-      ]
-    },
-    {
-      "path": "/pages/1301",
-      "title": "活动与内容管理",
-      "group": "运营与奖励",
-      "source": "13.运营与奖励/01.活动与内容管理.md",
-      "code": "1301",
-      "headings": [
-        "活动概述",
-        "活动参与流程",
-        "内容与公告"
-      ]
-    },
-    {
-      "path": "/pages/1302",
-      "title": "邀请关系与奖励流程",
-      "group": "运营与奖励",
-      "source": "13.运营与奖励/02.邀请关系与奖励流程.md",
-      "code": "1302",
-      "headings": [
-        "关系与奖励设计",
-        "计算与发放流程",
-        "异常处理"
-      ]
-    },
-    {
-      "path": "/pages/1401",
-      "title": "总后台、商户与权限",
-      "group": "商户与后台管理",
-      "source": "14.商户与后台管理/01.总后台、商户与权限.md",
-      "code": "1401",
-      "headings": [
-        "backoffice",
-        "partner",
-        "permissions"
-      ]
-    },
-    {
-      "path": "/pages/1402",
-      "title": "产品管理与审核流程",
-      "group": "商户与后台管理",
-      "source": "14.商户与后台管理/02.产品管理与审核流程.md",
-      "code": "1402",
-      "headings": [
-        "products",
-        "management",
-        "approval"
-      ]
-    },
-    {
-      "path": "/pages/1501",
-      "title": "统计指标与资产报表",
-      "group": "报表与风控",
-      "source": "15.报表与风控/01.统计指标与资产报表.md",
-      "code": "1501",
-      "headings": [
-        "definitions",
-        "trading",
-        "assets"
-      ]
-    },
-    {
-      "path": "/pages/1502",
-      "title": "风控规则与事件处理",
-      "group": "报表与风控",
-      "source": "15.报表与风控/02.风控规则与事件处理.md",
-      "code": "1502",
-      "headings": [
-        "rules",
-        "events",
-        "误报与恢复"
-      ]
-    },
-    {
-      "path": "/pages/1601",
-      "title": "公共组件与配置",
-      "group": "公共基础服务",
-      "source": "16.公共基础服务/01.公共组件与配置.md",
-      "code": "1601",
-      "headings": [
-        "公共组件",
-        "配置管理",
-        "日志与链路"
-      ]
-    },
-    {
-      "path": "/pages/1602",
-      "title": "消息、上传与国际化",
-      "group": "公共基础服务",
-      "source": "16.公共基础服务/02.消息、上传与国际化.md",
-      "code": "1602",
-      "headings": [
-        "messages",
-        "upload",
-        "i18n",
-        "tasks"
-      ]
-    },
-    {
-      "path": "/pages/1701",
-      "title": "接口约定与鉴权",
-      "group": "接口文档",
-      "source": "17.接口文档/01.接口约定与鉴权.md",
-      "code": "1701",
-      "headings": [
-        "文档范围",
-        "必须说明的协议项",
-        "鉴权与权限"
-      ]
-    },
-    {
-      "path": "/pages/1702",
-      "title": "业务接口与错误处理",
-      "group": "接口文档",
-      "source": "17.接口文档/02.业务接口与错误处理.md",
-      "code": "1702",
-      "headings": [
-        "account",
-        "trading",
-        "websocket",
-        "errors"
-      ]
-    },
-    {
-      "path": "/pages/1801",
-      "title": "部署架构与服务配置",
-      "group": "部署与运维",
-      "source": "18.部署与运维/01.部署架构与服务配置.md",
-      "code": "1801",
-      "headings": [
-        "dependencies",
-        "startup",
-        "configuration"
-      ]
-    },
-    {
-      "path": "/pages/1802",
-      "title": "监控、备份与恢复",
-      "group": "部署与运维",
-      "source": "18.部署与运维/02.监控、备份与恢复.md",
-      "code": "1802",
-      "headings": [
-        "monitor",
-        "backup",
-        "恢复验证"
-      ]
-    },
-    {
-      "path": "/pages/1803",
       "title": "常见故障排查",
       "group": "部署与运维",
-      "source": "18.部署与运维/03.常见故障排查.md",
-      "code": "1803",
+      "source": "12.部署与运维/02.常见故障排查.md",
+      "code": "1202",
       "headings": [
-        "排查记录"
+        "排查顺序"
       ]
     }
   ]

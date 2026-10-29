@@ -23,7 +23,7 @@ function html(to) {
 <head>
   <meta charset="utf-8">
   <meta http-equiv="refresh" content="0;url=${to}">
-  <link rel="canonical" href="https://tgex.net${to}">
+  <link rel="canonical" href="https://chattrade.org${to}">
   <title>Redirecting…</title>
   <script>location.replace(${JSON.stringify(to)})</script>
 </head>

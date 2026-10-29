@@ -20,7 +20,7 @@ const teekConfig = defineTeekConfig({
   sidebarTrigger: false,
   windowTransition: false,
   breadcrumb: { enabled: true, showCurrentName: false },
-  author: { name: 'TGEX' },
+  author: { name: 'ChatTrade' },
   themeEnhance: { enabled: false },
   footerInfo: {
     theme: { show: false },
@@ -38,12 +38,15 @@ const teekConfig = defineTeekConfig({
   }
 })
 
+const docsBase = process.env.DOCS_BASE || '/'
+
 export default defineConfig({
   extends: teekConfig,
   lang: 'zh-CN',
-  title: 'TGEX',
-  titleTemplate: ':title · TGEX',
+  title: 'ChatTrade',
+  titleTemplate: ':title · ChatTrade',
   description: DEFAULT_DESCRIPTION,
+  base: docsBase,
   srcDir: '.',
   outDir: '../dist',
   cleanUrls: true,
@@ -57,25 +60,25 @@ export default defineConfig({
   ],
   transformPageData: transformSeoPageData,
   themeConfig: {
-    logo: { src: '/logo.svg', alt: 'TGEX' },
-    siteTitle: 'TGEX',
+    logo: { src: '/logo.svg', alt: 'ChatTrade' },
+    siteTitle: 'ChatTrade',
     nav: [
       {
         text: withTopNavIcon('文档指南'),
         link: '/pages/0101',
-        activeMatch: '/pages/01|/pages/02|/pages/03|/pages/04'
+        activeMatch: '/pages/01|/pages/02|/pages/03'
       },
       {
-        text: withTopNavIcon('交易业务'),
+        text: withTopNavIcon('产品能力'),
         items: [
-          { text: withTopNavIcon('现货手册'), link: '/pages/0701' },
-          { text: withTopNavIcon('合约手册'), link: '/pages/0801' },
-          { text: withTopNavIcon('期权手册'), link: '/pages/0901' },
-          { text: withTopNavIcon('钱包手册'), link: '/pages/1001' },
-          { text: withTopNavIcon('OTC手册'), link: '/pages/1101' }
+          { text: withTopNavIcon('桌面端'), link: '/pages/0401' },
+          { text: withTopNavIcon('手机端'), link: '/pages/0501' },
+          { text: withTopNavIcon('AI 研究'), link: '/pages/0601' },
+          { text: withTopNavIcon('策略与回测'), link: '/pages/0701' },
+          { text: withTopNavIcon('交易与券商'), link: '/pages/0801' }
         ]
       },
-      { text: withTopNavIcon('部署与运维'), link: '/pages/1801' }
+      { text: withTopNavIcon('部署与运维'), link: '/pages/1201' }
     ],
     sidebar,
     outline: { level: [2, 3], label: '本页内容' },
@@ -111,13 +114,13 @@ export default defineConfig({
     lightModeSwitchTitle: '切换浅色模式',
     notFound: {
       title: '页面未找到',
-      quote: '可以返回首页，或搜索你想了解的业务流程。',
+      quote: '可以返回首页，或搜索 ChatTrade 工作区相关文档。',
       linkLabel: '返回首页',
       linkText: '返回首页'
     },
     footer: {
-      message: 'TGEX · 交易所设计与业务流程',
-      copyright: '基于 Coinex 工程整理 · 教学示例不代表实际交易参数'
+      message: 'ChatTrade · chattrade-workspace 知识库',
+      copyright: '仅覆盖工作区工程 · 与 tgex.net 无关'
     }
   }
 })

@@ -94,7 +94,7 @@ async function main() {
 
     sidebar.push({
       text: sectionTitle,
-      collapsed: sectionTitle !== '现货手册',
+      collapsed: sectionTitle !== '项目介绍',
       items
     })
   }
