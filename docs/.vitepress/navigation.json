@@ -6,7 +6,7 @@
       {
         "text": "项目概述",
         "link": "/pages/0101",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "文档面向谁",
@@ -25,7 +25,7 @@
       {
         "text": "功能全景",
         "link": "/pages/0102",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "核心业务",
@@ -40,7 +40,7 @@
       {
         "text": "技术栈",
         "link": "/pages/0103",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "已观察到的技术组成",
@@ -59,7 +59,7 @@
       {
         "text": "文档阅读指南",
         "link": "/pages/0104",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "推荐学习路线",
@@ -84,7 +84,7 @@
       {
         "text": "环境准备",
         "link": "/pages/0201",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "环境组成",
@@ -103,7 +103,7 @@
       {
         "text": "工程结构",
         "link": "/pages/0202",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "服务不是一个单体应用",
@@ -118,7 +118,7 @@
       {
         "text": "服务启动与验证",
         "link": "/pages/0203",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "建议启动层次",
@@ -143,7 +143,7 @@
       {
         "text": "整体架构",
         "link": "/pages/0301",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "四类职责",
@@ -162,7 +162,7 @@
       {
         "text": "服务通信与消息流转",
         "link": "/pages/0302",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "通信方式",
@@ -181,7 +181,7 @@
       {
         "text": "数据存储与缓存",
         "link": "/pages/0303",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "数据分工",
@@ -200,7 +200,7 @@
       {
         "text": "多商户架构",
         "link": "/pages/0304",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "已观察到的结构",
@@ -225,7 +225,7 @@
       {
         "text": "币种、网络与账户",
         "link": "/pages/0401",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "币种和网络",
@@ -244,7 +244,7 @@
       {
         "text": "委托、撮合与成交",
         "link": "/pages/0402",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "三个对象",
@@ -263,7 +263,7 @@
       {
         "text": "现货、合约与期权",
         "link": "/pages/0403",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "期权用语的边界",
@@ -280,7 +280,7 @@
       {
         "text": "用户与账户体系",
         "link": "/pages/0501",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "业务对象",
@@ -295,7 +295,7 @@
       {
         "text": "注册、登录与认证流程",
         "link": "/pages/0502",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "注册与登录",
@@ -314,7 +314,7 @@
       {
         "text": "权限与账户保护",
         "link": "/pages/0503",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "权限设计",
@@ -339,7 +339,7 @@
       {
         "text": "资产体系与余额设计",
         "link": "/pages/0601",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "账户分类",
@@ -358,7 +358,7 @@
       {
         "text": "核心资金流程",
         "link": "/pages/0602",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "账户划转",
@@ -377,7 +377,7 @@
       {
         "text": "对账与资金一致性",
         "link": "/pages/0603",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "对账层次",
@@ -402,7 +402,7 @@
       {
         "text": "业务概述",
         "link": "/pages/0701",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "现货交易基础",
@@ -421,7 +421,7 @@
       {
         "text": "系统架构",
         "link": "/pages/0702",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "模块划分与职责",
@@ -440,7 +440,7 @@
       {
         "text": "交易规则",
         "link": "/pages/0703",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "币种与交易对",
@@ -459,7 +459,7 @@
       {
         "text": "核心设计",
         "link": "/pages/0704",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "账户与资产",
@@ -478,7 +478,7 @@
       {
         "text": "核心交易流程",
         "link": "/pages/0705",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "完整交易流程",
@@ -505,7 +505,7 @@
       {
         "text": "行情与推送",
         "link": "/pages/0706",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "三类数据",
@@ -524,7 +524,7 @@
       {
         "text": "异常处理与一致性保障",
         "link": "/pages/0707",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "典型场景",
@@ -549,7 +549,7 @@
       {
         "text": "业务概述与系统架构",
         "link": "/pages/0801",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "产品与术语",
@@ -564,7 +564,7 @@
       {
         "text": "交易规则",
         "link": "/pages/0802",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "开仓、平仓与方向",
@@ -583,7 +583,7 @@
       {
         "text": "核心设计",
         "link": "/pages/0803",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "账户与持仓",
@@ -606,7 +606,7 @@
       {
         "text": "核心交易流程",
         "link": "/pages/0804",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "完整交易流程",
@@ -633,7 +633,7 @@
       {
         "text": "行情与异常处理",
         "link": "/pages/0805",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "合约价格体系",
@@ -654,7 +654,7 @@
       {
         "text": "业务概述与版本说明",
         "link": "/pages/0901",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "产品与版本",
@@ -669,7 +669,7 @@
       {
         "text": "产品与交易规则",
         "link": "/pages/0902",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "方向与期限",
@@ -688,7 +688,7 @@
       {
         "text": "核心设计",
         "link": "/pages/0903",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "账户与资产",
@@ -707,7 +707,7 @@
       {
         "text": "核心交易流程",
         "link": "/pages/0904",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "完整交易流程",
@@ -730,7 +730,7 @@
       {
         "text": "行情与异常处理",
         "link": "/pages/0905",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "行情与推送",
@@ -751,7 +751,7 @@
       {
         "text": "业务概述与钱包架构",
         "link": "/pages/1001",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "职责边界",
@@ -766,7 +766,7 @@
       {
         "text": "核心设计",
         "link": "/pages/1002",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "币种与网络",
@@ -789,7 +789,7 @@
       {
         "text": "核心充提流程",
         "link": "/pages/1003",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "充值监听与入账",
@@ -812,7 +812,7 @@
       {
         "text": "核对、安全与异常处理",
         "link": "/pages/1004",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "充提核对与监控",
@@ -833,7 +833,7 @@
       {
         "text": "业务概述与系统架构",
         "link": "/pages/1101",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "参与者",
@@ -848,7 +848,7 @@
       {
         "text": "商家、规则与核心设计",
         "link": "/pages/1102",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "商家与交易规则",
@@ -871,7 +871,7 @@
       {
         "text": "核心交易流程",
         "link": "/pages/1103",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "广告发布",
@@ -898,7 +898,7 @@
       {
         "text": "风控与异常处理",
         "link": "/pages/1104",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "典型问题",
@@ -923,7 +923,7 @@
       {
         "text": "业务概述与外部接入",
         "link": "/pages/1201",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "模块概述",
@@ -942,7 +942,7 @@
       {
         "text": "策略与跟单流程",
         "link": "/pages/1202",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "策略与跟单设计",
@@ -967,7 +967,7 @@
       {
         "text": "活动与内容管理",
         "link": "/pages/1301",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "活动概述",
@@ -986,7 +986,7 @@
       {
         "text": "邀请关系与奖励流程",
         "link": "/pages/1302",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "关系与奖励设计",
@@ -1011,7 +1011,7 @@
       {
         "text": "总后台、商户与权限",
         "link": "/pages/1401",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "总后台与商户后台",
@@ -1030,7 +1030,7 @@
       {
         "text": "产品管理与审核流程",
         "link": "/pages/1402",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "币种与交易产品管理",
@@ -1055,7 +1055,7 @@
       {
         "text": "统计指标与资产报表",
         "link": "/pages/1501",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "统计维度与口径",
@@ -1074,7 +1074,7 @@
       {
         "text": "风控规则与事件处理",
         "link": "/pages/1502",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "规则设计",
@@ -1099,7 +1099,7 @@
       {
         "text": "公共组件与配置",
         "link": "/pages/1601",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "公共组件",
@@ -1118,7 +1118,7 @@
       {
         "text": "消息、上传与国际化",
         "link": "/pages/1602",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "消息、短信与邮件",
@@ -1147,7 +1147,7 @@
       {
         "text": "接口约定与鉴权",
         "link": "/pages/1701",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "文档范围",
@@ -1166,7 +1166,7 @@
       {
         "text": "业务接口与错误处理",
         "link": "/pages/1702",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "用户与资产接口",
@@ -1195,7 +1195,7 @@
       {
         "text": "部署架构与服务配置",
         "link": "/pages/1801",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "环境依赖",
@@ -1214,7 +1214,7 @@
       {
         "text": "监控、备份与恢复",
         "link": "/pages/1802",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "日志、监控与告警",
@@ -1233,7 +1233,7 @@
       {
         "text": "常见故障排查",
         "link": "/pages/1803",
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "text": "排查记录",

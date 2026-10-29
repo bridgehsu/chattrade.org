@@ -73,7 +73,8 @@ async function main() {
       const headings = await extractH2(join(docs, sectionDir, file))
       const sideItem = { text: title, link: publicPath }
       if (headings.length) {
-        sideItem.collapsed = true
+        // Keep H2 children expanded so the sidebar shows clear hierarchy by default.
+        sideItem.collapsed = false
         sideItem.items = headings.map((h) => ({
           text: h.text,
           link: `${publicPath}#${h.id}`
