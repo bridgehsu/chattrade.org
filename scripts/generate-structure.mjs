@@ -1,9 +1,9 @@
 /**
  * Rebuild sidebar + rewrites from docs/NN.标题 trees only.
- * Does not inherit anchors/captions from previous navigation or content-map.
+ * Nested sidebar items come from each page's ## headings (not old nav).
  * Public URL: /pages/{sectionNo}{pageNo}  e.g. 01.项目介绍/01.项目概述 → /pages/0101
  */
-import { readdir, writeFile } from 'node:fs/promises'
+import { readdir, readFile, writeFile } from 'node:fs/promises'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -13,10 +13,34 @@ const structurePath = join(docs, '.vitepress/structure.json')
 const navPath = join(docs, '.vitepress/navigation.json')
 const mapPath = join(root, 'content-map.json')
 const NUMBERED = /^(\d+)\.(.+)$/
+const H2 = /^##\s+(.+?)\s*$/gm
 
 function stripNumber(name) {
   const m = name.match(NUMBERED)
   return m ? m[2] : name
+}
+
+/** Match VitePress: custom {#id}, else keep Chinese/ASCII heading text as id. */
+function parseHeading(raw) {
+  const custom = raw.match(/^(.*?)\s*\{#([a-zA-Z0-9_-]+)\}\s*$/)
+  if (custom) {
+    return { text: custom[1].trim(), id: custom[2] }
+  }
+  const text = raw.replace(/\s*\{#.*?\}\s*$/, '').trim()
+  return { text, id: text }
+}
+
+async function extractH2(filePath) {
+  const md = await readFile(filePath, 'utf8')
+  // Drop frontmatter so --- blocks don't confuse matching
+  const body = md.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '')
+  const items = []
+  for (const match of body.matchAll(H2)) {
+    const { text, id } = parseHeading(match[1])
+    if (!text || !id) continue
+    items.push({ text, id })
+  }
+  return items
 }
 
 async function main() {
@@ -46,8 +70,25 @@ async function main() {
       const publicPath = `/pages/${code}`
       rewrites[sourceRel] = publicMd
 
-      items.push({ text: title, link: publicPath })
-      pages.push({ path: publicPath, title, group: sectionTitle, source: sourceRel, code })
+      const headings = await extractH2(join(docs, sectionDir, file))
+      const sideItem = { text: title, link: publicPath }
+      if (headings.length) {
+        sideItem.collapsed = true
+        sideItem.items = headings.map((h) => ({
+          text: h.text,
+          link: `${publicPath}#${h.id}`
+        }))
+      }
+
+      items.push(sideItem)
+      pages.push({
+        path: publicPath,
+        title,
+        group: sectionTitle,
+        source: sourceRel,
+        code,
+        headings: headings.map((h) => h.id)
+      })
     }
 
     sidebar.push({
@@ -60,13 +101,18 @@ async function main() {
   const sections = sidebar.map((section, index) => ({
     key: `section-${String(index + 1).padStart(2, '0')}`,
     text: section.text,
-    items: section.items.map((item) => ({ text: item.text, link: item.link }))
+    items: section.items.map((item) => {
+      const node = { text: item.text, link: item.link }
+      if (item.items) node.items = item.items
+      return node
+    })
   }))
 
   await writeFile(structurePath, JSON.stringify({ rewrites, pages }, null, 2) + '\n')
   await writeFile(navPath, JSON.stringify(sidebar, null, 2) + '\n')
   await writeFile(mapPath, JSON.stringify({ sections, pages }, null, 2) + '\n')
-  console.log(`Generated structure for ${pages.length} pages / ${sidebar.length} sections`)
+  const nested = sidebar.reduce((n, s) => n + s.items.filter((i) => i.items?.length).length, 0)
+  console.log(`Generated structure for ${pages.length} pages / ${sidebar.length} sections (${nested} with H2 children)`)
   console.log(`Example: ${pages[0]?.source} -> ${pages[0]?.path}`)
 }
 

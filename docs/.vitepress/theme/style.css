@@ -10,8 +10,25 @@
 .VPNavBar{border-bottom:1px solid var(--vp-c-divider)}
 .VPNavBarMenuLink{font-size:13px!important}
 .VPSidebar{font-size:13px}
-.VPSidebarItem.level-0>.item>.text{font-size:13px;font-weight:650}
-.VPSidebarItem.level-1>.item>.text,.VPSidebarItem.level-2>.item>.text{font-size:13px}
+/* Section titles */
+.VPSidebarItem.level-0{padding-bottom:6px}
+.VPSidebarItem.level-0>.item{padding-top:14px}
+.VPSidebarItem.level-0>.item>.text{
+  font-size:12px;font-weight:700;letter-spacing:.4px;
+  color:var(--vp-c-text-1)!important;opacity:.92
+}
+.VPSidebarItem.level-0:not(:first-child)>.item{border-top:1px solid var(--vp-c-divider);margin-top:4px}
+/* Page titles */
+.VPSidebarItem.level-1>.item>.text{font-size:13px;font-weight:550;color:var(--vp-c-text-1)}
+.VPSidebarItem.level-1.is-active>.item>.text{color:var(--vp-c-brand-1)!important;font-weight:650}
+/* In-page H2 anchors */
+.VPSidebarItem.level-2>.item>.text{
+  font-size:12px;font-weight:450;color:var(--vp-c-text-2)!important;line-height:1.45
+}
+.VPSidebarItem.level-2.is-active>.item>.text{color:var(--vp-c-brand-1)!important;font-weight:600}
+.VPSidebarItem.level-2>.item{padding-left:8px;border-left:2px solid transparent;margin-left:6px}
+.VPSidebarItem.level-2.is-active>.item,
+.VPSidebarItem.level-2.has-active>.item{border-left-color:var(--vp-c-brand-1)}
 .VPDoc .content-container{max-width:800px!important}
 .vp-doc h1{font-size:33px;letter-spacing:-.8px;line-height:1.4}
 .vp-doc h2{font-size:23px;letter-spacing:-.4px;padding-top:25px;margin-top:42px}
