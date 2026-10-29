@@ -1,10 +1,13 @@
 import { defineConfig } from 'vitepress'
 import sidebar from './navigation.json'
+import structure from './structure.json'
+
 export default defineConfig({
   lang: 'zh-CN', title: 'TGEX', titleTemplate: ':title · TGEX',
   description: '交易所设计与业务流程知识库。理解现货、合约、期权、钱包与 OTC 的架构、资金和核心流程。',
   srcDir: '.', outDir: '../dist', cleanUrls: true,
-  srcExclude: ['**/index.html', 'assets/**'],
+  srcExclude: ['**/index.html', 'assets/**', 'pages/**'],
+  rewrites: structure.rewrites,
   sitemap: { hostname: 'https://tgex.net' },
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
@@ -14,18 +17,18 @@ export default defineConfig({
   themeConfig: {
     logo: { src: '/logo.svg', alt: 'TGEX' }, siteTitle: 'TGEX',
     nav: [
-      { text: '文档指南', 
-        link: '/00/0001/000001', activeMatch: '/00/|/01/|/02/|/03/' 
+      { text: '文档指南',
+        link: '/pages/0101', activeMatch: '/pages/01|/pages/02|/pages/03|/pages/04'
       },
-      { text: '交易业务', 
+      { text: '交易业务',
         items: [
-        { text: '现货手册', link: '/06/0601/060001' }, 
-        { text: '合约手册', link: '/07/0701/070001' },
-        { text: '期权手册', link: '/08/0801/080001' }, 
-        { text: '钱包手册', link: '/09/0901/090001' },
-        { text: 'OTC手册', link: '/10/1001/100001' }
+        { text: '现货手册', link: '/pages/0701' },
+        { text: '合约手册', link: '/pages/0801' },
+        { text: '期权手册', link: '/pages/0901' },
+        { text: '钱包手册', link: '/pages/1001' },
+        { text: 'OTC手册', link: '/pages/1101' }
       ] },
-      { text: '部署与运维', link: '/17/1701/170001' }
+      { text: '部署与运维', link: '/pages/1801' }
     ],
     sidebar,
     outline: { level: [2, 3], label: '本页内容' },

@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 const root = dirname(fileURLToPath(new URL('../package.json', import.meta.url)))
 const dist = join(root, 'dist')
 const docs = join(root, 'docs')
-const copiedRoots = ['assets', 'vp-icons.css', 'index.html', '404.html', 'hashmap.json', 'logo.svg']
+const NUMBERED_SOURCE = /^\d+\./
 
 async function walk(dir) {
   const entries = await readdir(dir, { withFileTypes: true })
@@ -20,8 +20,20 @@ async function walk(dir) {
 
 async function cleanCopiedAssets() {
   await rm(join(docs, 'assets'), { recursive: true, force: true })
-  for (const name of ['vp-icons.css', 'index.html', '404.html', 'hashmap.json']) {
+  await rm(join(docs, 'pages'), { recursive: true, force: true })
+  for (const name of ['vp-icons.css', 'index.html', '404.html', 'hashmap.json', 'sitemap.xml']) {
     await rm(join(docs, name), { force: true })
+  }
+
+  // Drop leftover English slug publish dirs; keep NN.标题 source trees.
+  const entries = await readdir(docs, { withFileTypes: true })
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue
+    if (['.vitepress', 'public', 'assets', 'pages'].includes(entry.name)) continue
+    if (NUMBERED_SOURCE.test(entry.name)) continue
+    if (/^[a-z][a-z0-9-]*$/i.test(entry.name)) {
+      await rm(join(docs, entry.name), { recursive: true, force: true })
+    }
   }
 }
 
@@ -42,7 +54,7 @@ async function sync() {
     await mkdir(dirname(dest), { recursive: true })
     await cp(file, dest)
   }
-  console.log(`Synced GitHub Pages files from dist/ into docs/ (${copiedRoots.join(', ')} and page indexes)`)
+  console.log('Synced GitHub Pages files from dist/ into docs/ (pages/* + site assets)')
 }
 
 await sync()

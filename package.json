@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs --host 127.0.0.1",
-    "build": "vitepress build docs && node scripts/sync-github-pages.mjs",
+    "structure": "node scripts/generate-structure.mjs",
+    "build": "npm run structure && vitepress build docs && node scripts/sync-github-pages.mjs",
     "preview": "vitepress preview docs --host 127.0.0.1",
-    "check": "node scripts/check-content.mjs"
+    "check": "npm run structure && node scripts/check-content.mjs"
   },
   "devDependencies": {
     "vitepress": "1.6.4",

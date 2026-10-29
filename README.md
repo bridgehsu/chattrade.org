@@ -19,7 +19,9 @@ npm run preview
 
 构建产物在 `dist/`。源文件在 `docs/`，导航在 `docs/.vitepress/navigation.json`。`content-map.json` 是内容索引，新增页面时需同步更新。首页组件和主题位于 `docs/.vitepress/theme/`。
 
-文档目录使用编号路径：一级 `00`–`17`，二级继承父前缀如 `0001`/`0601`，文档为六位如 `000001.md`/`060001.md`。侧栏仍显示中文标题。路径对照见 `scripts/path-map.json`。
+文档源码采用与 eladmin/vdoing 类似的 `序号.标题` 组织，例如 `docs/07.现货手册/01.业务概述.md`。侧栏显示中文标题（去掉序号）；对外 URL 为 `/pages/0701/`（栏目两位序号 + 文两位序号）。修改目录后运行 `npm run structure` 重建侧栏与映射。
+
+`docs/pages/`、`docs/assets/` 以及根下同步出的 `index.html` 等为构建产物，已加入 `.gitignore`，由 `npm run build` 生成，不要手改。
 
 ## GitHub 自动构建与 Pages 部署
 
@@ -48,7 +50,7 @@ npm run preview
 1. 将 `dist/` 上传到支持静态文件的托管服务。
 2. 在托管侧绑定 `tgex.net`，按服务商要求设置 A、AAAA 或 CNAME 记录。
 3. 配置 TLS 证书和 HTTP 到 HTTPS 跳转。
-4. 支持 `/06/0605/060005` 这样的无扩展名路由：先尝试同名 `.html`，未找到时返回 `404.html`，不要把所有未知路径重写成首页。
+4. 支持 `/pages/0705` 这样的无扩展名路由：先尝试同名 `.html`，未找到时返回 `404.html`，不要把所有未知路径重写成首页。
 5. 验证首页、文档深链接、搜索、移动端和 404。
 
 Sitemap 已使用 `https://tgex.net`。写入域名元数据不代表已注册域名或完成 DNS 绑定。Sites 预览发布默认保留私有访问范围。
