@@ -1,9 +1,9 @@
 /**
- * Rebuild sidebar + rewrites from docs/NN.标题 trees.
- * Public URL: /pages/{sectionNo}{pageNo}/  e.g. 01.项目介绍/01.项目概述 → /pages/0101/
+ * Rebuild sidebar + rewrites from docs/NN.标题 trees only.
+ * Does not inherit anchors/captions from previous navigation or content-map.
+ * Public URL: /pages/{sectionNo}{pageNo}  e.g. 01.项目介绍/01.项目概述 → /pages/0101
  */
-import { readdir, readFile, writeFile } from 'node:fs/promises'
-import { existsSync } from 'node:fs'
+import { readdir, writeFile } from 'node:fs/promises'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -19,41 +19,7 @@ function stripNumber(name) {
   return m ? m[2] : name
 }
 
-function walkAnchors(nav, into = new Map()) {
-  for (const section of nav || []) {
-    for (const item of section.items || []) {
-      if (item.link && !item.link.includes('#') && item.items?.length) {
-        into.set(item.link, item.items)
-      }
-      if (item.items) walkAnchors([{ items: item.items }], into)
-    }
-  }
-  return into
-}
-
-function remapAnchorItems(items, newPath) {
-  return (items || []).map((child) => {
-    const anchor = child.link?.includes('#') ? child.link.split('#')[1] : null
-    return {
-      text: child.text,
-      link: anchor ? `${newPath}#${anchor}` : newPath
-    }
-  })
-}
-
 async function main() {
-  const map = existsSync(mapPath) ? JSON.parse(await readFile(mapPath, 'utf8')) : { sections: [], pages: [] }
-  const prevNav = existsSync(navPath) ? JSON.parse(await readFile(navPath, 'utf8')) : []
-  const anchorsByOldPath = walkAnchors(prevNav)
-
-  // Also index anchors by page title within section for remapping after URL change
-  const anchorsBySourceHint = new Map()
-  for (const page of map.pages || []) {
-    if (page.source && anchorsByOldPath.has(page.path)) {
-      anchorsBySourceHint.set(page.source, anchorsByOldPath.get(page.path))
-    }
-  }
-
   const sectionDirs = (await readdir(docs, { withFileTypes: true }))
     .filter((e) => e.isDirectory() && NUMBERED.test(e.name))
     .map((e) => e.name)
@@ -80,13 +46,7 @@ async function main() {
       const publicPath = `/pages/${code}`
       rewrites[sourceRel] = publicMd
 
-      const sideItem = { text: title, link: publicPath }
-      const oldAnchors = anchorsBySourceHint.get(sourceRel)
-        || anchorsByOldPath.get(publicPath)
-        || null
-      if (oldAnchors?.length) sideItem.items = remapAnchorItems(oldAnchors, publicPath)
-
-      items.push(sideItem)
+      items.push({ text: title, link: publicPath })
       pages.push({ path: publicPath, title, group: sectionTitle, source: sourceRel, code })
     }
 
@@ -97,19 +57,11 @@ async function main() {
     })
   }
 
-  const sections = sidebar.map((section, index) => {
-    const prevSection = map.sections.find((s) => s.text === section.text) || {}
-    return {
-      key: prevSection.key || `section-${index + 1}`,
-      text: section.text,
-      caption: prevSection.caption || '',
-      items: section.items.map((item) => {
-        const node = { text: item.text, link: item.link }
-        if (item.items) node.items = item.items
-        return node
-      })
-    }
-  })
+  const sections = sidebar.map((section, index) => ({
+    key: `section-${String(index + 1).padStart(2, '0')}`,
+    text: section.text,
+    items: section.items.map((item) => ({ text: item.text, link: item.link }))
+  }))
 
   await writeFile(structurePath, JSON.stringify({ rewrites, pages }, null, 2) + '\n')
   await writeFile(navPath, JSON.stringify(sidebar, null, 2) + '\n')

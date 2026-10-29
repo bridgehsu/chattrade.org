@@ -62,7 +62,7 @@
     ]
   },
   {
-    "text": "交易所基础知识",
+    "text": "基础知识",
     "collapsed": true,
     "items": [
       {
@@ -89,21 +89,7 @@
       },
       {
         "text": "注册、登录与认证流程",
-        "link": "/pages/0502",
-        "items": [
-          {
-            "text": "注册与登录",
-            "link": "/pages/0502#login"
-          },
-          {
-            "text": "身份认证",
-            "link": "/pages/0502#verification"
-          },
-          {
-            "text": "安全验证",
-            "link": "/pages/0502#security"
-          }
-        ]
+        "link": "/pages/0502"
       },
       {
         "text": "权限与账户保护",
@@ -117,39 +103,11 @@
     "items": [
       {
         "text": "资产体系与余额设计",
-        "link": "/pages/0601",
-        "items": [
-          {
-            "text": "账户分类",
-            "link": "/pages/0601#accounts"
-          },
-          {
-            "text": "可用与冻结",
-            "link": "/pages/0601#balances"
-          },
-          {
-            "text": "资金流水",
-            "link": "/pages/0601#journal"
-          }
-        ]
+        "link": "/pages/0601"
       },
       {
         "text": "核心资金流程",
-        "link": "/pages/0602",
-        "items": [
-          {
-            "text": "账户划转",
-            "link": "/pages/0602#transfer"
-          },
-          {
-            "text": "资金冻结与释放",
-            "link": "/pages/0602#freeze"
-          },
-          {
-            "text": "扣款与入账",
-            "link": "/pages/0602#settlement"
-          }
-        ]
+        "link": "/pages/0602"
       },
       {
         "text": "对账与资金一致性",
@@ -163,133 +121,31 @@
     "items": [
       {
         "text": "业务概述",
-        "link": "/pages/0701",
-        "items": [
-          {
-            "text": "现货交易基础",
-            "link": "/pages/0701#basics"
-          },
-          {
-            "text": "交易界面与核心术语",
-            "link": "/pages/0701#interface"
-          }
-        ]
+        "link": "/pages/0701"
       },
       {
         "text": "系统架构",
-        "link": "/pages/0702",
-        "items": [
-          {
-            "text": "模块划分与职责",
-            "link": "/pages/0702#modules"
-          },
-          {
-            "text": "模块交互与数据流向",
-            "link": "/pages/0702#dataflow"
-          },
-          {
-            "text": "工程事实",
-            "link": "/pages/0702#facts"
-          }
-        ]
+        "link": "/pages/0702"
       },
       {
         "text": "交易规则",
-        "link": "/pages/0703",
-        "items": [
-          {
-            "text": "币种与交易对",
-            "link": "/pages/0703#pairs"
-          },
-          {
-            "text": "订单类型",
-            "link": "/pages/0703#types"
-          },
-          {
-            "text": "精度、限额与手续费",
-            "link": "/pages/0703#limits"
-          }
-        ]
+        "link": "/pages/0703"
       },
       {
         "text": "核心设计",
-        "link": "/pages/0704",
-        "items": [
-          {
-            "text": "账户与资产",
-            "link": "/pages/0704#account"
-          },
-          {
-            "text": "订单与状态流转",
-            "link": "/pages/0704#states"
-          },
-          {
-            "text": "订单簿与撮合机制",
-            "link": "/pages/0704#orderbook"
-          }
-        ]
+        "link": "/pages/0704"
       },
       {
         "text": "核心交易流程",
-        "link": "/pages/0705",
-        "items": [
-          {
-            "text": "完整交易流程",
-            "link": "/pages/0705#complete"
-          },
-          {
-            "text": "下单与资金冻结",
-            "link": "/pages/0705#place"
-          },
-          {
-            "text": "撮合与成交",
-            "link": "/pages/0705#match"
-          },
-          {
-            "text": "成交结算",
-            "link": "/pages/0705#settle"
-          },
-          {
-            "text": "撤单与资金解冻",
-            "link": "/pages/0705#cancel"
-          }
-        ]
+        "link": "/pages/0705"
       },
       {
         "text": "行情与推送",
-        "link": "/pages/0706",
-        "items": [
-          {
-            "text": "三类数据",
-            "link": "/pages/0706#types"
-          },
-          {
-            "text": "推送流程",
-            "link": "/pages/0706#push"
-          },
-          {
-            "text": "断线恢复",
-            "link": "/pages/0706#reconnect"
-          }
-        ]
+        "link": "/pages/0706"
       },
       {
         "text": "异常处理与一致性保障",
-        "link": "/pages/0707",
-        "items": [
-          {
-            "text": "典型场景",
-            "link": "/pages/0707#scenarios"
-          },
-          {
-            "text": "用贯穿示例核对",
-            "link": "/pages/0707#example"
-          },
-          {
-            "text": "检查方法",
-            "link": "/pages/0707#check"
-          }
-        ]
+        "link": "/pages/0707"
       }
     ]
   },
@@ -299,97 +155,23 @@
     "items": [
       {
         "text": "业务概述与系统架构",
-        "link": "/pages/0801",
-        "items": [
-          {
-            "text": "合约产品与术语",
-            "link": "/pages/0801#basics"
-          },
-          {
-            "text": "模块划分与交互",
-            "link": "/pages/0801#architecture"
-          }
-        ]
+        "link": "/pages/0801"
       },
       {
         "text": "交易规则",
-        "link": "/pages/0802",
-        "items": [
-          {
-            "text": "开仓、平仓与持仓方向",
-            "link": "/pages/0802#direction"
-          },
-          {
-            "text": "杠杆与保证金",
-            "link": "/pages/0802#margin"
-          },
-          {
-            "text": "价格、限额与费用",
-            "link": "/pages/0802#fees"
-          }
-        ]
+        "link": "/pages/0802"
       },
       {
         "text": "核心设计",
-        "link": "/pages/0803",
-        "items": [
-          {
-            "text": "账户与持仓",
-            "link": "/pages/0803#position"
-          },
-          {
-            "text": "订单与状态流转",
-            "link": "/pages/0803#orders"
-          },
-          {
-            "text": "保证金与盈亏",
-            "link": "/pages/0803#pnl"
-          },
-          {
-            "text": "风险与强平",
-            "link": "/pages/0803#risk"
-          }
-        ]
+        "link": "/pages/0803"
       },
       {
         "text": "核心交易流程",
-        "link": "/pages/0804",
-        "items": [
-          {
-            "text": "完整交易流程",
-            "link": "/pages/0804#complete"
-          },
-          {
-            "text": "开仓与成交",
-            "link": "/pages/0804#open"
-          },
-          {
-            "text": "持仓与保证金调整",
-            "link": "/pages/0804#adjust"
-          },
-          {
-            "text": "平仓与结算",
-            "link": "/pages/0804#close"
-          },
-          {
-            "text": "强平与清算",
-            "link": "/pages/0804#liquidation"
-          }
-        ]
+        "link": "/pages/0804"
       },
       {
         "text": "行情与异常处理",
-        "link": "/pages/0805",
-        "items": [
-          {
-            "text": "合约行情与价格体系",
-            "link": "/pages/0805#prices"
-          },
-          {
-            "text": "异常处理与一致性保障",
-            "link": "/pages/0805#exceptions"
-          }
-        ]
+        "link": "/pages/0805"
       }
     ]
   },
@@ -399,89 +181,23 @@
     "items": [
       {
         "text": "业务概述与版本说明",
-        "link": "/pages/0901",
-        "items": [
-          {
-            "text": "产品类型与版本说明",
-            "link": "/pages/0901#versions"
-          },
-          {
-            "text": "系统架构",
-            "link": "/pages/0901#architecture"
-          }
-        ]
+        "link": "/pages/0901"
       },
       {
         "text": "产品与交易规则",
-        "link": "/pages/0902",
-        "items": [
-          {
-            "text": "交易方向与期限",
-            "link": "/pages/0902#direction"
-          },
-          {
-            "text": "下单条件与限额",
-            "link": "/pages/0902#limits"
-          },
-          {
-            "text": "结果判定与收益规则",
-            "link": "/pages/0902#result"
-          }
-        ]
+        "link": "/pages/0902"
       },
       {
         "text": "核心设计",
-        "link": "/pages/0903",
-        "items": [
-          {
-            "text": "期权账户与资产",
-            "link": "/pages/0903#account"
-          },
-          {
-            "text": "订单与周期状态",
-            "link": "/pages/0903#states"
-          },
-          {
-            "text": "价格依据与结算机制",
-            "link": "/pages/0903#price"
-          }
-        ]
+        "link": "/pages/0903"
       },
       {
         "text": "核心交易流程",
-        "link": "/pages/0904",
-        "items": [
-          {
-            "text": "完整交易流程",
-            "link": "/pages/0904#complete"
-          },
-          {
-            "text": "下单与资金处理",
-            "link": "/pages/0904#place"
-          },
-          {
-            "text": "到期与结果判定",
-            "link": "/pages/0904#expiry"
-          },
-          {
-            "text": "收益结算与入账",
-            "link": "/pages/0904#settle"
-          }
-        ]
+        "link": "/pages/0904"
       },
       {
         "text": "行情与异常处理",
-        "link": "/pages/0905",
-        "items": [
-          {
-            "text": "行情与推送",
-            "link": "/pages/0905#market"
-          },
-          {
-            "text": "异常处理与一致性保障",
-            "link": "/pages/0905#exceptions"
-          }
-        ]
+        "link": "/pages/0905"
       }
     ]
   },
@@ -495,61 +211,15 @@
       },
       {
         "text": "核心设计",
-        "link": "/pages/1002",
-        "items": [
-          {
-            "text": "币种与网络",
-            "link": "/pages/1002#network"
-          },
-          {
-            "text": "地址管理",
-            "link": "/pages/1002#address"
-          },
-          {
-            "text": "链上交易与确认数",
-            "link": "/pages/1002#confirmations"
-          },
-          {
-            "text": "钱包与内部账务",
-            "link": "/pages/1002#ledger"
-          }
-        ]
+        "link": "/pages/1002"
       },
       {
         "text": "核心充提流程",
-        "link": "/pages/1003",
-        "items": [
-          {
-            "text": "充值监听与入账",
-            "link": "/pages/1003#deposit"
-          },
-          {
-            "text": "提现申请与审核",
-            "link": "/pages/1003#review"
-          },
-          {
-            "text": "提现发送与确认",
-            "link": "/pages/1003#withdraw"
-          },
-          {
-            "text": "资金归集",
-            "link": "/pages/1003#collection"
-          }
-        ]
+        "link": "/pages/1003"
       },
       {
         "text": "核对、安全与异常处理",
-        "link": "/pages/1004",
-        "items": [
-          {
-            "text": "充提核对与监控",
-            "link": "/pages/1004#monitor"
-          },
-          {
-            "text": "安全与异常处理",
-            "link": "/pages/1004#exceptions"
-          }
-        ]
+        "link": "/pages/1004"
       }
     ]
   },
@@ -563,51 +233,11 @@
       },
       {
         "text": "商家、规则与核心设计",
-        "link": "/pages/1102",
-        "items": [
-          {
-            "text": "商家与交易规则",
-            "link": "/pages/1102#merchant"
-          },
-          {
-            "text": "广告与委托",
-            "link": "/pages/1102#advert"
-          },
-          {
-            "text": "订单状态",
-            "link": "/pages/1102#states"
-          },
-          {
-            "text": "资金冻结与释放",
-            "link": "/pages/1102#funds"
-          }
-        ]
+        "link": "/pages/1102"
       },
       {
         "text": "核心交易流程",
-        "link": "/pages/1103",
-        "items": [
-          {
-            "text": "广告发布",
-            "link": "/pages/1103#advert"
-          },
-          {
-            "text": "下单与付款确认",
-            "link": "/pages/1103#payment"
-          },
-          {
-            "text": "放币与成交",
-            "link": "/pages/1103#release"
-          },
-          {
-            "text": "取消与超时",
-            "link": "/pages/1103#cancel"
-          },
-          {
-            "text": "申诉处理",
-            "link": "/pages/1103#appeal"
-          }
-        ]
+        "link": "/pages/1103"
       },
       {
         "text": "风控与异常处理",
@@ -621,39 +251,11 @@
     "items": [
       {
         "text": "业务概述与外部接入",
-        "link": "/pages/1201",
-        "items": [
-          {
-            "text": "模块概述",
-            "link": "/pages/1201#modules"
-          },
-          {
-            "text": "外部平台接入",
-            "link": "/pages/1201#external"
-          },
-          {
-            "text": "机器人交易机制",
-            "link": "/pages/1201#robot"
-          }
-        ]
+        "link": "/pages/1201"
       },
       {
         "text": "策略与跟单流程",
-        "link": "/pages/1202",
-        "items": [
-          {
-            "text": "策略与跟单设计",
-            "link": "/pages/1202#design"
-          },
-          {
-            "text": "核心流程",
-            "link": "/pages/1202#flows"
-          },
-          {
-            "text": "风险控制与异常处理",
-            "link": "/pages/1202#risk"
-          }
-        ]
+        "link": "/pages/1202"
       }
     ]
   },
@@ -677,39 +279,11 @@
     "items": [
       {
         "text": "总后台、商户与权限",
-        "link": "/pages/1401",
-        "items": [
-          {
-            "text": "总后台与商户后台",
-            "link": "/pages/1401#backoffice"
-          },
-          {
-            "text": "商户与应用配置",
-            "link": "/pages/1401#partner"
-          },
-          {
-            "text": "角色、菜单与数据权限",
-            "link": "/pages/1401#permissions"
-          }
-        ]
+        "link": "/pages/1401"
       },
       {
         "text": "产品管理与审核流程",
-        "link": "/pages/1402",
-        "items": [
-          {
-            "text": "币种与交易产品管理",
-            "link": "/pages/1402#products"
-          },
-          {
-            "text": "用户、订单与资金管理",
-            "link": "/pages/1402#management"
-          },
-          {
-            "text": "关键操作与审核流程",
-            "link": "/pages/1402#approval"
-          }
-        ]
+        "link": "/pages/1402"
       }
     ]
   },
@@ -719,35 +293,11 @@
     "items": [
       {
         "text": "统计指标与资产报表",
-        "link": "/pages/1501",
-        "items": [
-          {
-            "text": "统计维度与指标口径",
-            "link": "/pages/1501#definitions"
-          },
-          {
-            "text": "用户与交易报表",
-            "link": "/pages/1501#trading"
-          },
-          {
-            "text": "资产报表与对账结果",
-            "link": "/pages/1501#assets"
-          }
-        ]
+        "link": "/pages/1501"
       },
       {
         "text": "风控规则与事件处理",
-        "link": "/pages/1502",
-        "items": [
-          {
-            "text": "风控规则与触发条件",
-            "link": "/pages/1502#rules"
-          },
-          {
-            "text": "风险事件处理流程",
-            "link": "/pages/1502#events"
-          }
-        ]
+        "link": "/pages/1502"
       }
     ]
   },
@@ -761,25 +311,7 @@
       },
       {
         "text": "消息、上传与国际化",
-        "link": "/pages/1602",
-        "items": [
-          {
-            "text": "消息、短信与邮件",
-            "link": "/pages/1602#messages"
-          },
-          {
-            "text": "文件上传",
-            "link": "/pages/1602#upload"
-          },
-          {
-            "text": "国际化",
-            "link": "/pages/1602#i18n"
-          },
-          {
-            "text": "定时任务",
-            "link": "/pages/1602#tasks"
-          }
-        ]
+        "link": "/pages/1602"
       }
     ]
   },
@@ -793,25 +325,7 @@
       },
       {
         "text": "业务接口与错误处理",
-        "link": "/pages/1702",
-        "items": [
-          {
-            "text": "用户与资产接口",
-            "link": "/pages/1702#account"
-          },
-          {
-            "text": "交易业务接口",
-            "link": "/pages/1702#trading"
-          },
-          {
-            "text": "行情与 WebSocket",
-            "link": "/pages/1702#websocket"
-          },
-          {
-            "text": "错误码",
-            "link": "/pages/1702#errors"
-          }
-        ]
+        "link": "/pages/1702"
       }
     ]
   },
@@ -821,35 +335,11 @@
     "items": [
       {
         "text": "部署架构与服务配置",
-        "link": "/pages/1801",
-        "items": [
-          {
-            "text": "环境依赖",
-            "link": "/pages/1801#dependencies"
-          },
-          {
-            "text": "服务部署与启动顺序",
-            "link": "/pages/1801#startup"
-          },
-          {
-            "text": "配置管理",
-            "link": "/pages/1801#configuration"
-          }
-        ]
+        "link": "/pages/1801"
       },
       {
         "text": "监控、备份与恢复",
-        "link": "/pages/1802",
-        "items": [
-          {
-            "text": "日志、监控与告警",
-            "link": "/pages/1802#monitor"
-          },
-          {
-            "text": "备份与恢复",
-            "link": "/pages/1802#backup"
-          }
-        ]
+        "link": "/pages/1802"
       },
       {
         "text": "常见故障排查",

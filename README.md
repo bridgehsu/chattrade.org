@@ -17,9 +17,9 @@ npm run build
 npm run preview
 ```
 
-构建产物在 `dist/`。源文件在 `docs/`，导航在 `docs/.vitepress/navigation.json`。`content-map.json` 是内容索引，新增页面时需同步更新。首页组件和主题位于 `docs/.vitepress/theme/`。
+构建产物在 `dist/`。源文件在 `docs/`；`navigation.json`、`structure.json`、`content-map.json` 均由 `npm run gen` 根据目录生成，不要手改。首页组件和主题位于 `docs/.vitepress/theme/`。
 
-文档源码采用与 eladmin/vdoing 类似的 `序号.标题` 组织，例如 `docs/07.现货手册/01.业务概述.md`。侧栏显示中文标题（去掉序号）；对外 URL 为 `/pages/0701/`（栏目两位序号 + 文两位序号）。修改目录后运行 `npm run structure` 重建侧栏与映射。
+文档源码采用与 eladmin/vdoing 类似的 `序号.标题` 组织，例如 `docs/07.现货手册/01.业务概述.md`。侧栏显示中文标题（去掉序号）；对外 URL 为 `/pages/0701`（栏目两位序号 + 文两位序号）。修改目录后运行 `npm run gen`。
 
 `docs/pages/`、`docs/assets/` 以及根下同步出的 `index.html` 等为构建产物，已加入 `.gitignore`，由 `npm run build` 生成，不要手改。
 
