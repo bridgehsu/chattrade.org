@@ -48,12 +48,21 @@ git push -u origin main
 
 不要把 ChatTrade 文档推回 `tgex.net` 仓库。
 
-### 2. 打开 GitHub Pages
+### 2. 打开 GitHub Pages（关键）
 
 仓库 **Settings → Pages**：
 
-1. **Build and deployment → Source** 选 **GitHub Actions**（不要选 Deploy from a branch / `/docs`）。
-2. 若使用自定义域名，在 **Custom domain** 填 `chattrade.org`，DNS 就绪后勾选 **Enforce HTTPS**。
+**推荐（Actions）：**
+
+1. **Build and deployment → Source** 选 **GitHub Actions**。
+2. Custom domain 填 `chattrade.org`，DNS 就绪后勾选 **Enforce HTTPS**。
+
+**备用（分支发布）：**
+
+若暂时不能用 Actions 发布，把 Source 改为 **Deploy from a branch**，Branch 选 **`gh-pages`**、目录 **`/ (root)`**。  
+工作流会把 VitePress 的 `dist/` 推到 `gh-pages`。
+
+**不要**选 `main` + `/docs` 或 `main` 根目录。那样会走 Jekyll，把 Markdown 当正文，`<HomePage />` 不会编译，首页只剩仓库名标题。
 
 ### 3. 域名与 base 路径
 
