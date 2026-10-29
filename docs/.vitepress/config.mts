@@ -15,17 +15,17 @@ export default defineConfig({
     logo: { src: '/logo.svg', alt: 'TGEX' }, siteTitle: 'TGEX',
     nav: [
       { text: '文档指南', 
-        link: '/introduction/overview', activeMatch: '/introduction/|/quickstart/|/architecture/|/fundamentals/' 
+        link: '/00/0001/000001', activeMatch: '/00/|/01/|/02/|/03/' 
       },
       { text: '交易业务', 
         items: [
-        { text: '现货手册', link: '/spot/overview' }, 
-        { text: '合约手册', link: '/contract/overview' },
-        { text: '期权手册', link: '/options/overview' }, 
-        { text: '钱包手册', link: '/wallet/overview' },
-        { text: 'OTC手册', link: '/otc/overview' }
+        { text: '现货手册', link: '/06/0601/060001' }, 
+        { text: '合约手册', link: '/07/0701/070001' },
+        { text: '期权手册', link: '/08/0801/080001' }, 
+        { text: '钱包手册', link: '/09/0901/090001' },
+        { text: 'OTC手册', link: '/10/1001/100001' }
       ] },
-      { text: '部署与运维', link: '/deployment/topology' }
+      { text: '部署与运维', link: '/17/1701/170001' }
     ],
     sidebar,
     outline: { level: [2, 3], label: '本页内容' },
