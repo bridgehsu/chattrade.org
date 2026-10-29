@@ -4,6 +4,7 @@ import HomePage from './components/HomePage.vue'
 import Flow from './components/Flow.vue'
 import SpotLedger from './components/SpotLedger.vue'
 import './style.css'
+import './sidebar-icons.css'
 export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
