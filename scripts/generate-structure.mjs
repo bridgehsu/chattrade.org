@@ -6,14 +6,12 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { buildSidebarIconCss } from './sidebar-icons.mjs'
 
 const root = dirname(fileURLToPath(new URL('../package.json', import.meta.url)))
 const docs = join(root, 'docs')
 const structurePath = join(docs, '.vitepress/structure.json')
 const navPath = join(docs, '.vitepress/navigation.json')
 const mapPath = join(root, 'content-map.json')
-const iconCssPath = join(docs, '.vitepress/theme/sidebar-icons.css')
 const NUMBERED = /^(\d+)\.(.+)$/
 const H2 = /^##\s+(.+?)\s*$/gm
 
@@ -114,7 +112,6 @@ async function main() {
   await writeFile(structurePath, JSON.stringify({ rewrites, pages }, null, 2) + '\n')
   await writeFile(navPath, JSON.stringify(sidebar, null, 2) + '\n')
   await writeFile(mapPath, JSON.stringify({ sections, pages }, null, 2) + '\n')
-  await writeFile(iconCssPath, buildSidebarIconCss(sidebar.map((s) => s.text)))
   const nested = sidebar.reduce((n, s) => n + s.items.filter((i) => i.items?.length).length, 0)
   console.log(`Generated structure for ${pages.length} pages / ${sidebar.length} sections (${nested} with H2 children)`)
   console.log(`Example: ${pages[0]?.source} -> ${pages[0]?.path}`)

@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { defineTeekConfig } from 'vitepress-theme-teek/config'
 import sidebar from './navigation.json'
 import structure from './structure.json'
 import {
@@ -7,8 +8,38 @@ import {
   seoSitemap,
   transformSeoPageData
 } from './seo'
+import { withTopNavIcon } from '../../scripts/sidebar-icons.mjs'
+
+// Keep our gen/rewrites; disable Teek plugins that would fight them.
+// Prefer a clean docs look (close to VitePress default + light Teek extras).
+const teekConfig = defineTeekConfig({
+  teekTheme: true,
+  teekHome: false,
+  vpHome: true,
+  pageStyle: 'default',
+  sidebarTrigger: false,
+  windowTransition: false,
+  breadcrumb: { enabled: true, showCurrentName: false },
+  author: { name: 'TGEX' },
+  themeEnhance: { enabled: false },
+  footerInfo: {
+    theme: { show: false },
+    copyright: { show: false }
+  },
+  articleAnalyze: { showInfo: false, showIcon: false },
+  articleUpdate: { enabled: false },
+  articleShare: { enabled: false },
+  backTop: { enabled: true },
+  vitePlugins: {
+    sidebar: false,
+    permalink: false,
+    autoFrontmatter: false,
+    mdH1: false
+  }
+})
 
 export default defineConfig({
+  extends: teekConfig,
   lang: 'zh-CN',
   title: 'TGEX',
   titleTemplate: ':title · TGEX',
@@ -30,21 +61,21 @@ export default defineConfig({
     siteTitle: 'TGEX',
     nav: [
       {
-        text: '文档指南',
+        text: withTopNavIcon('文档指南'),
         link: '/pages/0101',
         activeMatch: '/pages/01|/pages/02|/pages/03|/pages/04'
       },
       {
-        text: '交易业务',
+        text: withTopNavIcon('交易业务'),
         items: [
-          { text: '现货手册', link: '/pages/0701' },
-          { text: '合约手册', link: '/pages/0801' },
-          { text: '期权手册', link: '/pages/0901' },
-          { text: '钱包手册', link: '/pages/1001' },
-          { text: 'OTC手册', link: '/pages/1101' }
+          { text: withTopNavIcon('现货手册'), link: '/pages/0701' },
+          { text: withTopNavIcon('合约手册'), link: '/pages/0801' },
+          { text: withTopNavIcon('期权手册'), link: '/pages/0901' },
+          { text: withTopNavIcon('钱包手册'), link: '/pages/1001' },
+          { text: withTopNavIcon('OTC手册'), link: '/pages/1101' }
         ]
       },
-      { text: '部署与运维', link: '/pages/1801' }
+      { text: withTopNavIcon('部署与运维'), link: '/pages/1801' }
     ],
     sidebar,
     outline: { level: [2, 3], label: '本页内容' },

@@ -1,12 +1,13 @@
-import DefaultTheme from 'vitepress/theme'
+import Teek from 'vitepress-theme-teek'
 import type { Theme } from 'vitepress'
 import HomePage from './components/HomePage.vue'
 import Flow from './components/Flow.vue'
 import SpotLedger from './components/SpotLedger.vue'
+import 'vitepress-theme-teek/index.css'
 import './style.css'
-import './sidebar-icons.css'
+
 export default {
-  extends: DefaultTheme,
+  extends: Teek,
   enhanceApp({ app }) {
     app.component('HomePage', HomePage)
     app.component('Flow', Flow)
