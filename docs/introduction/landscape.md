@@ -15,7 +15,7 @@ description: 从用户交易到平台运营，认识业务模块之间的关系�
 | --- | --- | --- |
 | 用户 | 身份、登录、认证与用户关系 | coinex-user、coinex-user-relation |
 | 账务 | 资产账户、余额与资金变动 | coinex-account |
-| 现货 | 委托与现货撮合 | coinex-entrust、coinex-match |
+| 现货 | 委托、现货撮合与行情 | coinex-entrust、coinex-match、coinex-market |
 | 合约 | 合约委托、撮合与行情 | coinex-contract-entrust、coinex-contract-match、coinex-contract-market |
 | 期权 | 周期、方向、订单与结算 | coinex-contract-option-* |
 | 钱包 | 链上地址、转账与归集 | coinex-wallet |

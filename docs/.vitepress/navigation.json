@@ -186,6 +186,10 @@
           {
             "text": "模块交互与数据流向",
             "link": "/spot/architecture#dataflow"
+          },
+          {
+            "text": "工程事实",
+            "link": "/spot/architecture#facts"
           }
         ]
       },
@@ -253,11 +257,39 @@
       },
       {
         "text": "行情与推送",
-        "link": "/spot/market"
+        "link": "/spot/market",
+        "items": [
+          {
+            "text": "三类数据",
+            "link": "/spot/market#types"
+          },
+          {
+            "text": "推送流程",
+            "link": "/spot/market#push"
+          },
+          {
+            "text": "断线恢复",
+            "link": "/spot/market#reconnect"
+          }
+        ]
       },
       {
         "text": "异常处理与一致性保障",
-        "link": "/spot/exceptions"
+        "link": "/spot/exceptions",
+        "items": [
+          {
+            "text": "典型场景",
+            "link": "/spot/exceptions#scenarios"
+          },
+          {
+            "text": "用贯穿示例核对",
+            "link": "/spot/exceptions#example"
+          },
+          {
+            "text": "检查方法",
+            "link": "/spot/exceptions#check"
+          }
+        ]
       }
     ]
   },
