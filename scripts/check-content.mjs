@@ -15,6 +15,7 @@ for (const [source, publicMd] of Object.entries(structure.rewrites || {})) {
 
 let count = 0
 const errors = []
+const H2 = /^##\s+(.+?)\s*$/gm
 
 function resolveFile(pathname) {
   if (pathname === '/') return path.join(root, 'docs/index.md')
@@ -23,15 +24,32 @@ function resolveFile(pathname) {
   return path.join(root, 'docs', pathname.replace(/^\//, '') + '.md')
 }
 
+/** Same rules as generate-structure / VitePress: {#id} or heading text. */
+function headingIds(md) {
+  const body = md.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '')
+  const ids = new Set()
+  for (const match of body.matchAll(H2)) {
+    const raw = match[1]
+    const custom = raw.match(/^(.*?)\s*\{#([a-zA-Z0-9_-]+)\}\s*$/)
+    if (custom) ids.add(custom[2])
+    else ids.add(raw.replace(/\s*\{#.*?\}\s*$/, '').trim())
+  }
+  return ids
+}
+
 function checkLink(link, from) {
   if (!link || /^(https?:|mailto:)/.test(link)) return
-  const [pathname, anchor] = link.split('#')
+  const [pathname, rawAnchor] = link.split('#')
   const file = resolveFile(pathname)
   if (!fs.existsSync(file)) {
     errors.push(`${from}: missing ${link} (resolved ${path.relative(root, file)})`)
     return
   }
-  if (anchor && !fs.readFileSync(file, 'utf8').includes(`{#${anchor}}`)) {
+  if (!rawAnchor) return
+  const anchor = decodeURIComponent(rawAnchor)
+  const body = fs.readFileSync(file, 'utf8')
+  if (body.includes(`{#${anchor}}`)) return
+  if (!headingIds(body).has(anchor)) {
     errors.push(`${from}: missing anchor ${link}`)
   }
 }
